@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Entire test scenario" timestamp="2022-12-22T15:59:30" time="37.003" tests="26" failures="1" errors="1" skipped="1">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Entire test scenario"/>
+      <property name="capabilities" value="firefox.108_0_1.windows"/>
+      <property name="file" value="file:///C:/Users/Admin/googleCloudCalculatorProject/tests/test.e2e.js"/>
+    </properties>
+    <testcase classname="firefox.108_0_1.windows.Entire_test_scenario" name="should open the main page" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="firefox.108_0_1.windows.Entire_test_scenario" name="Should search given value" time="13.696">
+      <system-out><![CDATA[
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"//input[@aria-label=\"Search\"]"}
+RESULT: {"url":"https://cloud.google.com/"}
+RESULT: {"using":"xpath","value":"//input[@aria-label=\"Search\"]"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/b75f9e6a-58e5-4a2c-91ae-ca505c5854fa/clear - {}
+RESULT: {}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/b75f9e6a-58e5-4a2c-91ae-ca505c5854fa/value - {"text":"Google Cloud Pricing Calculator"}
+RESULT: {"text":"Google Cloud Pricing Calculator"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"//a[@href=\"https://cloud.google.com/products/calculator?hl=en\"]"}
+RESULT: {"using":"xpath","value":"//a[@href=\"https://cloud.google.com/products/calculator?hl=en\"]"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/elements - {"using":"xpath","value":"//a[@href=\"https://cloud.google.com/products/calculator?hl=en\"]"}
+RESULT: {"using":"xpath","value":"//a[@href=\"https://cloud.google.com/products/calculator?hl=en\"]"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/elements - {"using":"xpath","value":"//a[@href=\"https://cloud.google.com/products/calculator?hl=en\"]"}
+RESULT: {"using":"xpath","value":"//a[@href=\"https://cloud.google.com/products/calculator?hl=en\"]"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"//a[@href=\"https://cloud.google.com/products/calculator?hl=en\"]"}
+RESULT: {"using":"xpath","value":"//a[@href=\"https://cloud.google.com/products/calculator?hl=en\"]"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/cf70e1da-a08a-4900-943b-33be03dd5743/click - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.108_0_1.windows.Entire_test_scenario" name="Should open calculator page" time="0.042">
+      <system-out><![CDATA[
+COMMAND: GET /session/9e01170d-0136-4125-b903-3a0e0d026e5d/title - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.108_0_1.windows.Entire_test_scenario" name="Should switch on outer frame" time="0.173">
+      <system-out><![CDATA[
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/timeouts - {"pageLoad":5000}
+RESULT: {"pageLoad":5000}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"css selector","value":"devsite-iframe > iframe"}
+RESULT: {"using":"css selector","value":"devsite-iframe > iframe"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/elements - {"using":"css selector","value":"devsite-iframe > iframe"}
+RESULT: {"using":"css selector","value":"devsite-iframe > iframe"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/frame - {"id":{"sessionId":"9e01170d-0136-4125-b903-3a0e0d026e5d","elementId":"c387d346-4267-4b10-86bf-39a446f76d53","element-6066-11e4-a52e-4f735466cecf":"c387d346-4267-4b10-86bf-39a446f76d53","selector":"devsite-iframe > iframe","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"firefox","browserVersion":"108.0.1","moz:accessibilityChecks":false,"moz:buildID":"20221215175817","moz:firefoxOptions":{},"moz:geckodriverVersion":"0.32.0","moz:headless":false,"moz:platformVersion":"10.0","moz:processID":1692,"_":"13 more keys: [\"moz:profile\",\"moz:shutdownTimeout\",\"moz:useNonSpecCompliantPointerOrigin\",\"moz:webdriverClick\",\"moz:windowless\",\"pageLoadStrategy\",\"platformName\",\"proxy\",\"se:cdp\",\"setWindowRect\",\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\"]"}},"isReactElement":false}}
+RESULT: {"id":{"sessionId":"9e01170d-0136-4125-b903-3a0e0d026e5d","elementId":"c387d346-4267-4b10-86bf-39a446f76d53","element-6066-11e4-a52e-4f735466cecf":"c387d346-4267-4b10-86bf-39a446f76d53","selector":"devsite-iframe > iframe","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"firefox","browserVersion":"108.0.1","moz:accessibilityChecks":false,"moz:buildID":"20221215175817","moz:firefoxOptions":{},"moz:geckodriverVersion":"0.32.0","moz:headless":false,"moz:platformVersion":"10.0","moz:processID":1692,"_":"13 more keys: [\"moz:profile\",\"moz:shutdownTimeout\",\"moz:useNonSpecCompliantPointerOrigin\",\"moz:webdriverClick\",\"moz:windowless\",\"pageLoadStrategy\",\"platformName\",\"proxy\",\"se:cdp\",\"setWindowRect\",\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\"]"}},"isReactElement":false}}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.108_0_1.windows.Entire_test_scenario" name="Should switch on inner frame" time="0.129">
+      <system-out><![CDATA[
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"//div/iframe"}
+RESULT: {"using":"xpath","value":"//div/iframe"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/elements - {"using":"xpath","value":"//div/iframe"}
+RESULT: {"using":"xpath","value":"//div/iframe"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/frame - {"id":{"sessionId":"9e01170d-0136-4125-b903-3a0e0d026e5d","elementId":"6d6dce06-7def-40aa-9c3e-5fcf496f5dd0","element-6066-11e4-a52e-4f735466cecf":"6d6dce06-7def-40aa-9c3e-5fcf496f5dd0","selector":"//div/iframe","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"firefox","browserVersion":"108.0.1","moz:accessibilityChecks":false,"moz:buildID":"20221215175817","moz:firefoxOptions":{},"moz:geckodriverVersion":"0.32.0","moz:headless":false,"moz:platformVersion":"10.0","moz:processID":1692,"_":"13 more keys: [\"moz:profile\",\"moz:shutdownTimeout\",\"moz:useNonSpecCompliantPointerOrigin\",\"moz:webdriverClick\",\"moz:windowless\",\"pageLoadStrategy\",\"platformName\",\"proxy\",\"se:cdp\",\"setWindowRect\",\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\"]"}},"isReactElement":false}}
+RESULT: {"id":{"sessionId":"9e01170d-0136-4125-b903-3a0e0d026e5d","elementId":"6d6dce06-7def-40aa-9c3e-5fcf496f5dd0","element-6066-11e4-a52e-4f735466cecf":"6d6dce06-7def-40aa-9c3e-5fcf496f5dd0","selector":"//div/iframe","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"firefox","browserVersion":"108.0.1","moz:accessibilityChecks":false,"moz:buildID":"20221215175817","moz:firefoxOptions":{},"moz:geckodriverVersion":"0.32.0","moz:headless":false,"moz:platformVersion":"10.0","moz:processID":1692,"_":"13 more keys: [\"moz:profile\",\"moz:shutdownTimeout\",\"moz:useNonSpecCompliantPointerOrigin\",\"moz:webdriverClick\",\"moz:windowless\",\"pageLoadStrategy\",\"platformName\",\"proxy\",\"se:cdp\",\"setWindowRect\",\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\"]"}},"isReactElement":false}}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.108_0_1.windows.Entire_test_scenario" name="Should choose given value for number of instances" time="0.968">
+      <system-out><![CDATA[
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"css selector","value":"#input_90"}
+RESULT: {"using":"css selector","value":"#input_90"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/37d346d7-efb7-4180-9abb-22dd2b623f82/clear - {}
+RESULT: {}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/37d346d7-efb7-4180-9abb-22dd2b623f82/value - {"text":"4"}
+RESULT: {"text":"4"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"css selector","value":"#input_90"}
+RESULT: {"using":"css selector","value":"#input_90"}
+COMMAND: GET /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/37d346d7-efb7-4180-9abb-22dd2b623f82/property/value - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.108_0_1.windows.Entire_test_scenario" name="Should select given value for Series dropdown" time="0.782">
+      <system-out><![CDATA[
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"//md-select[@id=\"select_115\"]"}
+RESULT: {"using":"xpath","value":"//md-select[@id=\"select_115\"]"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/eca457ba-5122-4d12-ba48-73d632d37d7b/click - {}
+RESULT: {}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"//div[contains(text(), \"N1\")]"}
+RESULT: {"using":"xpath","value":"//div[contains(text(), \"N1\")]"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/e4a4fed7-994a-4700-8027-717436708de2/click - {}
+RESULT: {}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"//md-select[@id=\"select_115\"]"}
+RESULT: {"using":"xpath","value":"//md-select[@id=\"select_115\"]"}
+COMMAND: GET /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/eca457ba-5122-4d12-ba48-73d632d37d7b/attribute/aria-label - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.108_0_1.windows.Entire_test_scenario" name="Should choose given option for Machine type" time="0.728">
+      <system-out><![CDATA[
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"//md-select[@id=\"select_117\"]"}
+RESULT: {"using":"xpath","value":"//md-select[@id=\"select_117\"]"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/ace8c36a-6add-4ede-994a-002300e95b47/click - {}
+RESULT: {}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"//div[contains(text(), \"n1-standard-8\")]"}
+RESULT: {"using":"xpath","value":"//div[contains(text(), \"n1-standard-8\")]"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/3b238e1e-2248-4da5-8346-f5481036ac79/click - {}
+RESULT: {}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"//md-select[@id=\"select_117\"]"}
+RESULT: {"using":"xpath","value":"//md-select[@id=\"select_117\"]"}
+COMMAND: GET /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/ace8c36a-6add-4ede-994a-002300e95b47/attribute/aria-label - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.108_0_1.windows.Entire_test_scenario" name="Should cllck on AddGPU checkbox" time="0.432">
+      <system-out><![CDATA[
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"(//md-checkbox)[3]"}
+RESULT: {"using":"xpath","value":"(//md-checkbox)[3]"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/3f5b87d8-8d19-4aa6-8fa3-be8e7c1fa681/click - {}
+RESULT: {}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"(//md-checkbox)[3]"}
+RESULT: {"using":"xpath","value":"(//md-checkbox)[3]"}
+COMMAND: GET /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/3f5b87d8-8d19-4aa6-8fa3-be8e7c1fa681/attribute/aria-checked - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.108_0_1.windows.Entire_test_scenario" name="Should select given type of GPU" time="0.651">
+      <system-out><![CDATA[
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"(//md-select[@placeholder=\"GPU type\"])[1]"}
+RESULT: {"using":"xpath","value":"(//md-select[@placeholder=\"GPU type\"])[1]"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/fb0d84b2-85a8-42a2-9437-442d624cc5fc/click - {}
+RESULT: {}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"//div[contains(text(),\"NVIDIA Tesla V100\")]"}
+RESULT: {"using":"xpath","value":"//div[contains(text(),\"NVIDIA Tesla V100\")]"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/4986667b-24b4-4898-bdd0-0b25267f836a/click - {}
+RESULT: {}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"(//md-select[@placeholder=\"GPU type\"])[1]"}
+RESULT: {"using":"xpath","value":"(//md-select[@placeholder=\"GPU type\"])[1]"}
+COMMAND: GET /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/fb0d84b2-85a8-42a2-9437-442d624cc5fc/attribute/aria-label - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.108_0_1.windows.Entire_test_scenario" name="Should select given number of GPUs" time="0.942">
+      <system-out><![CDATA[
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/actions - {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":0,"y":0,"deltaX":0,"deltaY":400,"duration":200}]}]}
+RESULT: {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":0,"y":0,"deltaX":0,"deltaY":400,"duration":200}]}]}
+COMMAND: DELETE /session/9e01170d-0136-4125-b903-3a0e0d026e5d/actions - {}
+RESULT: {}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"//md-select[@placeholder=\"Number of GPUs\"]"}
+RESULT: {"using":"xpath","value":"//md-select[@placeholder=\"Number of GPUs\"]"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/2e51929d-d185-4602-bbdd-621e2709f8be/click - {}
+RESULT: {}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"(//md-option[@value=\"1\"])[14]"}
+RESULT: {"using":"xpath","value":"(//md-option[@value=\"1\"])[14]"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/18a27430-6669-4f62-a712-9565816129b8/click - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.108_0_1.windows.Entire_test_scenario" name="Should select given number of LocalSSD" time="0.84">
+      <system-out><![CDATA[
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"(//md-select[@placeholder=\"Local SSD\"])[1]"}
+RESULT: {"using":"xpath","value":"(//md-select[@placeholder=\"Local SSD\"])[1]"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/865de2ce-cf4c-4d05-8cd3-00a844c4977d/click - {}
+RESULT: {}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"//div[contains(text(), \"2x375 GB\")]"}
+RESULT: {"using":"xpath","value":"//div[contains(text(), \"2x375 GB\")]"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/3cd8ff70-ea71-4168-87ff-45c97bde328a/click - {}
+RESULT: {}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"(//md-select[@placeholder=\"Local SSD\"])[1]"}
+RESULT: {"using":"xpath","value":"(//md-select[@placeholder=\"Local SSD\"])[1]"}
+COMMAND: GET /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/865de2ce-cf4c-4d05-8cd3-00a844c4977d/attribute/aria-label - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.108_0_1.windows.Entire_test_scenario" name="Should select given option for Datacenter Location" time="1.128">
+      <system-out><![CDATA[
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/actions - {"actions":[{"id":"action2","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":0,"y":0,"deltaX":0,"deltaY":400,"duration":200}]}]}
+RESULT: {"actions":[{"id":"action2","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":0,"y":0,"deltaX":0,"deltaY":400,"duration":200}]}]}
+COMMAND: DELETE /session/9e01170d-0136-4125-b903-3a0e0d026e5d/actions - {}
+RESULT: {}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"(//md-select[@placeholder=\"Datacenter location\"])[1]"}
+RESULT: {"using":"xpath","value":"(//md-select[@placeholder=\"Datacenter location\"])[1]"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/7efa645a-5159-4498-8573-18303bbda8f1/click - {}
+RESULT: {}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"//md-option[@id=\"select_option_228\"]"}
+RESULT: {"using":"xpath","value":"//md-option[@id=\"select_option_228\"]"}
+COMMAND: GET /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/2b80cd1b-1762-4d9c-9097-e34f62c52af1/displayed - {}
+RESULT: {}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"//md-option[@id=\"select_option_228\"]"}
+RESULT: {"using":"xpath","value":"//md-option[@id=\"select_option_228\"]"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/2b80cd1b-1762-4d9c-9097-e34f62c52af1/click - {}
+RESULT: {}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"(//md-select[@placeholder=\"Datacenter location\"])[1]"}
+RESULT: {"using":"xpath","value":"(//md-select[@placeholder=\"Datacenter location\"])[1]"}
+COMMAND: GET /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/7efa645a-5159-4498-8573-18303bbda8f1/attribute/aria-label - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.108_0_1.windows.Entire_test_scenario" name="Should select given value fot Commitment term" time="0.76">
+      <system-out><![CDATA[
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"(//md-select[@placeholder=\"Committed usage\"])[1]"}
+RESULT: {"using":"xpath","value":"(//md-select[@placeholder=\"Committed usage\"])[1]"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/407ece25-a433-4099-8e1c-89d26504a887/click - {}
+RESULT: {}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"//md-option[@id=\"select_option_128\"]"}
+RESULT: {"using":"xpath","value":"//md-option[@id=\"select_option_128\"]"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/101d231b-2e1c-428c-87ae-eabf8f20762d/click - {}
+RESULT: {}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"(//md-select[@placeholder=\"Committed usage\"])[1]"}
+RESULT: {"using":"xpath","value":"(//md-select[@placeholder=\"Committed usage\"])[1]"}
+COMMAND: GET /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/407ece25-a433-4099-8e1c-89d26504a887/attribute/aria-label - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.108_0_1.windows.Entire_test_scenario" name="Should Add to Estimate" time="0.588">
+      <system-out><![CDATA[
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"//button[@aria-label=\"Add to Estimate\"]"}
+RESULT: {"using":"xpath","value":"//button[@aria-label=\"Add to Estimate\"]"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/cf087e65-0e01-43e3-8ee1-39de1d73c023/click - {}
+RESULT: {}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"//md-content[@id=\"compute\"]"}
+RESULT: {"using":"xpath","value":"//md-content[@id=\"compute\"]"}
+COMMAND: GET /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/7e463fe0-1fc7-4095-b2d1-eed070810d37/displayed - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.108_0_1.windows.Entire_test_scenario" name="Should match values for region in receipt and selected one" time="0.099">
+      <system-out><![CDATA[
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"//div[contains(text(), \"Region: \")]"}
+RESULT: {"using":"xpath","value":"//div[contains(text(), \"Region: \")]"}
+COMMAND: GET /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/ac4f0bba-c008-4db9-a3e5-a49a8e88ee2f/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.108_0_1.windows.Entire_test_scenario" name="Should match values for commitment term in receipt and selected one" time="0.109">
+      <system-out><![CDATA[
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"//div[contains(text(), \"Commitment term: \")]"}
+RESULT: {"using":"xpath","value":"//div[contains(text(), \"Commitment term: \")]"}
+COMMAND: GET /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/2b8a8302-e816-47fe-9f35-bdaded825051/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.108_0_1.windows.Entire_test_scenario" name="Should match values for local SSD in receipt and selected one" time="0.073">
+      <system-out><![CDATA[
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"//div[contains(text(), \"Local SSD: \")]"}
+RESULT: {"using":"xpath","value":"//div[contains(text(), \"Local SSD: \")]"}
+COMMAND: GET /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/6fb54825-151d-428b-a036-6147de34f763/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.108_0_1.windows.Entire_test_scenario" name="Should match values for vm class in receipt and selected one" time="0.092">
+      <system-out><![CDATA[
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"//div[contains(text(), \"Provisioning model: \")]"}
+RESULT: {"using":"xpath","value":"//div[contains(text(), \"Provisioning model: \")]"}
+COMMAND: GET /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/b00915ed-24a9-45b6-ae14-bd7ea37fc23d/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.108_0_1.windows.Entire_test_scenario" name="Should match values for vm instance type in receipt and selected one" time="0.059">
+      <system-out><![CDATA[
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"//div[contains(text(), \"Instance type: \")]"}
+RESULT: {"using":"xpath","value":"//div[contains(text(), \"Instance type: \")]"}
+COMMAND: GET /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/c4721ea2-14ac-4b4f-8f45-4b3d35657b12/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.108_0_1.windows.Entire_test_scenario" name="Should match values for total price in receipt and price received during manual check" time="0.077">
+      <system-out><![CDATA[
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"//b[contains(text(), \"Total Estimated Cost\")]"}
+RESULT: {"using":"xpath","value":"//b[contains(text(), \"Total Estimated Cost\")]"}
+COMMAND: GET /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/5f9582d9-d7ab-479a-ab86-03920e7e2704/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.108_0_1.windows.Entire_test_scenario" name="Should click on Email Estimate Button" time="0.347">
+      <system-out><![CDATA[
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"//button[@id=\"Email Estimate\"]"}
+RESULT: {"using":"xpath","value":"//button[@id=\"Email Estimate\"]"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/5dca1ae6-4a19-48c6-b9d1-e77e4dbcee22/click - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.108_0_1.windows.Entire_test_scenario" name="Should open new tab" time="0.771">
+      <system-out><![CDATA[
+COMMAND: GET /session/9e01170d-0136-4125-b903-3a0e0d026e5d/window/handles - {}
+RESULT: {}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/execute/sync - {"script":"return (function newWindow(url, windowName, windowFeatures) {\n    window.open(url, windowName || '', windowFeatures || '');\n}).apply(null, arguments)","args":["https://10minutemail.com/","10 Minutes mail",""]}
+RESULT: {"script":"return (function newWindow(url, windowName, windowFeatures) {\n    window.open(url, windowName || '', windowFeatures || '');\n}).apply(null, arguments)","args":["https://10minutemail.com/","10 Minutes mail",""]}
+COMMAND: GET /session/9e01170d-0136-4125-b903-3a0e0d026e5d/window/handles - {}
+RESULT: {}
+COMMAND: GET /session/9e01170d-0136-4125-b903-3a0e0d026e5d/window/handles - {}
+RESULT: {}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/window - {"handle":"7e4eff07-f6a3-480b-b970-10f5f005ff2f"}
+RESULT: {"handle":"7e4eff07-f6a3-480b-b970-10f5f005ff2f"}
+COMMAND: GET /session/9e01170d-0136-4125-b903-3a0e0d026e5d/title - {}
+RESULT: {}
+COMMAND: GET /session/9e01170d-0136-4125-b903-3a0e0d026e5d/title - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.108_0_1.windows.Entire_test_scenario" name="Should paste generated email into Email Estimate form" time="0.908">
+      <system-out><![CDATA[
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"//input[@id=\"mail_address\"]"}
+RESULT: {"using":"xpath","value":"//input[@id=\"mail_address\"]"}
+COMMAND: GET /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/f1b088c2-a764-4395-ab08-310303153265/property/value - {}
+RESULT: {}
+COMMAND: GET /session/9e01170d-0136-4125-b903-3a0e0d026e5d/window/handles - {}
+RESULT: {}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/window - {"handle":"c93a6a1a-83c7-4d91-90f2-82ab5e06f85a"}
+RESULT: {"handle":"c93a6a1a-83c7-4d91-90f2-82ab5e06f85a"}
+COMMAND: GET /session/9e01170d-0136-4125-b903-3a0e0d026e5d/url - {}
+RESULT: {}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"css selector","value":"devsite-iframe > iframe"}
+RESULT: {"using":"css selector","value":"devsite-iframe > iframe"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/elements - {"using":"css selector","value":"devsite-iframe > iframe"}
+RESULT: {"using":"css selector","value":"devsite-iframe > iframe"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/frame - {"id":{"sessionId":"9e01170d-0136-4125-b903-3a0e0d026e5d","elementId":"c387d346-4267-4b10-86bf-39a446f76d53","element-6066-11e4-a52e-4f735466cecf":"c387d346-4267-4b10-86bf-39a446f76d53","selector":"devsite-iframe > iframe","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"firefox","browserVersion":"108.0.1","moz:accessibilityChecks":false,"moz:buildID":"20221215175817","moz:firefoxOptions":{},"moz:geckodriverVersion":"0.32.0","moz:headless":false,"moz:platformVersion":"10.0","moz:processID":1692,"_":"13 more keys: [\"moz:profile\",\"moz:shutdownTimeout\",\"moz:useNonSpecCompliantPointerOrigin\",\"moz:webdriverClick\",\"moz:windowless\",\"pageLoadStrategy\",\"platformName\",\"proxy\",\"se:cdp\",\"setWindowRect\",\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\"]"}},"isReactElement":false}}
+RESULT: {"id":{"sessionId":"9e01170d-0136-4125-b903-3a0e0d026e5d","elementId":"c387d346-4267-4b10-86bf-39a446f76d53","element-6066-11e4-a52e-4f735466cecf":"c387d346-4267-4b10-86bf-39a446f76d53","selector":"devsite-iframe > iframe","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"firefox","browserVersion":"108.0.1","moz:accessibilityChecks":false,"moz:buildID":"20221215175817","moz:firefoxOptions":{},"moz:geckodriverVersion":"0.32.0","moz:headless":false,"moz:platformVersion":"10.0","moz:processID":1692,"_":"13 more keys: [\"moz:profile\",\"moz:shutdownTimeout\",\"moz:useNonSpecCompliantPointerOrigin\",\"moz:webdriverClick\",\"moz:windowless\",\"pageLoadStrategy\",\"platformName\",\"proxy\",\"se:cdp\",\"setWindowRect\",\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\"]"}},"isReactElement":false}}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"//div/iframe"}
+RESULT: {"using":"xpath","value":"//div/iframe"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/elements - {"using":"xpath","value":"//div/iframe"}
+RESULT: {"using":"xpath","value":"//div/iframe"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/frame - {"id":{"sessionId":"9e01170d-0136-4125-b903-3a0e0d026e5d","elementId":"6d6dce06-7def-40aa-9c3e-5fcf496f5dd0","element-6066-11e4-a52e-4f735466cecf":"6d6dce06-7def-40aa-9c3e-5fcf496f5dd0","selector":"//div/iframe","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"firefox","browserVersion":"108.0.1","moz:accessibilityChecks":false,"moz:buildID":"20221215175817","moz:firefoxOptions":{},"moz:geckodriverVersion":"0.32.0","moz:headless":false,"moz:platformVersion":"10.0","moz:processID":1692,"_":"13 more keys: [\"moz:profile\",\"moz:shutdownTimeout\",\"moz:useNonSpecCompliantPointerOrigin\",\"moz:webdriverClick\",\"moz:windowless\",\"pageLoadStrategy\",\"platformName\",\"proxy\",\"se:cdp\",\"setWindowRect\",\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\"]"}},"isReactElement":false}}
+RESULT: {"id":{"sessionId":"9e01170d-0136-4125-b903-3a0e0d026e5d","elementId":"6d6dce06-7def-40aa-9c3e-5fcf496f5dd0","element-6066-11e4-a52e-4f735466cecf":"6d6dce06-7def-40aa-9c3e-5fcf496f5dd0","selector":"//div/iframe","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"firefox","browserVersion":"108.0.1","moz:accessibilityChecks":false,"moz:buildID":"20221215175817","moz:firefoxOptions":{},"moz:geckodriverVersion":"0.32.0","moz:headless":false,"moz:platformVersion":"10.0","moz:processID":1692,"_":"13 more keys: [\"moz:profile\",\"moz:shutdownTimeout\",\"moz:useNonSpecCompliantPointerOrigin\",\"moz:webdriverClick\",\"moz:windowless\",\"pageLoadStrategy\",\"platformName\",\"proxy\",\"se:cdp\",\"setWindowRect\",\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\"]"}},"isReactElement":false}}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"(//input[@name=\"description\"])[3]"}
+RESULT: {"using":"xpath","value":"(//input[@name=\"description\"])[3]"}
+COMMAND: GET /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/f41ee527-5eb8-4347-9a63-8faf35fdd971/displayed - {}
+RESULT: {}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/actions - {"actions":[{"id":"action3","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":0,"y":0,"deltaX":0,"deltaY":200,"duration":200}]}]}
+RESULT: {"actions":[{"id":"action3","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":0,"y":0,"deltaX":0,"deltaY":200,"duration":200}]}]}
+COMMAND: DELETE /session/9e01170d-0136-4125-b903-3a0e0d026e5d/actions - {}
+RESULT: {}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"(//input[@name=\"description\"])[3]"}
+RESULT: {"using":"xpath","value":"(//input[@name=\"description\"])[3]"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/f41ee527-5eb8-4347-9a63-8faf35fdd971/clear - {}
+RESULT: {}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/f41ee527-5eb8-4347-9a63-8faf35fdd971/value - {"text":""}
+RESULT: {"text":""}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"(//input[@name=\"description\"])[3]"}
+RESULT: {"using":"xpath","value":"(//input[@name=\"description\"])[3]"}
+COMMAND: GET /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/f41ee527-5eb8-4347-9a63-8faf35fdd971/property/value - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.108_0_1.windows.Entire_test_scenario" name="Should click on Send Email button" time="0.754">
+      <system-out><![CDATA[
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"//button[@aria-label=\"Send Email\"]"}
+RESULT: {"using":"xpath","value":"//button[@aria-label=\"Send Email\"]"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element/3ce9e357-705a-4e31-9096-327e79ef9d0f/click - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.108_0_1.windows.Entire_test_scenario" name="Should recieve email" time="11.732">
+      <failure/>
+      <error message="Can't call click on element with selector &quot;//div[@class=&quot;small_subject&quot;]/span&quot; because element wasn't found"/>
+      <system-out><![CDATA[
+COMMAND: GET /session/9e01170d-0136-4125-b903-3a0e0d026e5d/window/handles - {}
+RESULT: {}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/window - {"handle":"c93a6a1a-83c7-4d91-90f2-82ab5e06f85a"}
+RESULT: {"handle":"c93a6a1a-83c7-4d91-90f2-82ab5e06f85a"}
+COMMAND: GET /session/9e01170d-0136-4125-b903-3a0e0d026e5d/url - {}
+RESULT: {}
+COMMAND: GET /session/9e01170d-0136-4125-b903-3a0e0d026e5d/title - {}
+RESULT: {}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/execute/sync - {"script":"return (() => window.name).apply(null, arguments)","args":[]}
+RESULT: {"script":"return (() => window.name).apply(null, arguments)","args":[]}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/window - {"handle":"7e4eff07-f6a3-480b-b970-10f5f005ff2f"}
+RESULT: {"handle":"7e4eff07-f6a3-480b-b970-10f5f005ff2f"}
+COMMAND: GET /session/9e01170d-0136-4125-b903-3a0e0d026e5d/url - {}
+RESULT: {}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/refresh - {}
+RESULT: {}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/actions - {"actions":[{"id":"action4","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":0,"y":0,"deltaX":0,"deltaY":800,"duration":200}]}]}
+RESULT: {"actions":[{"id":"action4","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":0,"y":0,"deltaX":0,"deltaY":800,"duration":200}]}]}
+COMMAND: DELETE /session/9e01170d-0136-4125-b903-3a0e0d026e5d/actions - {}
+RESULT: {}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/element - {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+RESULT: {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/elements - {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+RESULT: {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/elements - {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+RESULT: {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/elements - {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+RESULT: {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/elements - {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+RESULT: {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/elements - {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+RESULT: {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/elements - {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+RESULT: {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/elements - {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+RESULT: {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/elements - {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+RESULT: {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/elements - {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+RESULT: {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/elements - {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+RESULT: {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/elements - {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+RESULT: {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/elements - {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+RESULT: {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/elements - {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+RESULT: {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/elements - {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+RESULT: {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/elements - {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+RESULT: {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/elements - {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+RESULT: {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/elements - {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+RESULT: {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/elements - {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+RESULT: {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/elements - {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+RESULT: {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+COMMAND: POST /session/9e01170d-0136-4125-b903-3a0e0d026e5d/elements - {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+RESULT: {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+COMMAND: GET /session/9e01170d-0136-4125-b903-3a0e0d026e5d/screenshot - {}
+RESULT: {}
+COMMAND: DELETE /session/9e01170d-0136-4125-b903-3a0e0d026e5d - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Can't call click on element with selector "//div[@class="small_subject"]/span" because element wasn't found
+    at async Context.<anonymous> (file:///C:/Users/Admin/googleCloudCalculatorProject/tests/test.e2e.js:162:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

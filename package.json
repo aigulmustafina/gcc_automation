@@ -1,0 +1,28 @@
+{
+  "name": "googlecloudcalculatorproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "wdio run ./wdio.conf.js",
+    "HMPsmoke": "wdio run ./wdio.conf.js --suite hurtMePlentySmoke",
+    "HMPregression": "wdio run ./wdio.conf.js --suite hurtMePlentyregression",
+    "hardcoreSmoke": "wdio run ./wdio.conf.js --suite hardCoreSmoke",
+    "hardcoreRegression": "wdio run ./wdio.conf.js --suite hardCoreRegression"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wdio/allure-reporter": "^8.0.13",
+    "@wdio/cli": "^8.0.13",
+    "@wdio/junit-reporter": "^8.0.13",
+    "@wdio/local-runner": "^8.0.13",
+    "@wdio/mocha-framework": "^8.0.13",
+    "@wdio/selenium-standalone-service": "^8.0.13",
+    "@wdio/spec-reporter": "^8.0.13",
+    "chromedriver": "^108.0.0",
+    "wdio-chromedriver-service": "^8.0.1"
+  }
+}
