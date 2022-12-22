@@ -6,10 +6,10 @@
   "type": "module",
   "scripts": {
     "test": "wdio run ./wdio.conf.js",
-    "HMPsmoke": "wdio run ./wdio.conf.js --suite hurtMePlentySmoke",
-    "HMPregression": "wdio run ./wdio.conf.js --suite hurtMePlentyregression",
-    "hardcoreSmoke": "wdio run ./wdio.conf.js --suite hardCoreSmoke",
-    "hardcoreRegression": "wdio run ./wdio.conf.js --suite hardCoreRegression"
+    "hurtMePlentySmoke": "wdio run ./wdio.conf.js --suite hurtMePlentySmoke",
+    "hurtMePlentyregression": "wdio run ./wdio.conf.js --suite hurtMePlentyregression",
+    "hardCoreSmoke": "wdio run ./wdio.conf.js --suite hardCoreSmoke",
+    "hardCoreRegression": "wdio run ./wdio.conf.js --suite hardCoreRegression"
   },
   "keywords": [],
   "author": "",
