@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Entire test scenario" timestamp="2022-12-23T19:36:54" time="34.47" tests="26" failures="0" errors="0" skipped="1">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Entire test scenario"/>
+      <property name="capabilities" value="chrome.108_0_5359_125.windows"/>
+      <property name="file" value="file:///C:/Users/Admin/googleCloudCalculatorProject/tests/test.e2e.js"/>
+    </properties>
+    <testcase classname="chrome.108_0_5359_125.windows.Entire_test_scenario" name="should open the main page" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="chrome.108_0_5359_125.windows.Entire_test_scenario" name="Should search given value" time="13.337">
+      <system-out><![CDATA[
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"//input[@aria-label=\"Search\"]"}
+RESULT: {"url":"https://cloud.google.com/"}
+RESULT: {"using":"xpath","value":"//input[@aria-label=\"Search\"]"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element/56c860eb-28d2-4ce1-862a-30abd2ac3972/clear - {}
+RESULT: {}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element/56c860eb-28d2-4ce1-862a-30abd2ac3972/value - {"text":"Google Cloud Pricing Calculator"}
+RESULT: {"text":"Google Cloud Pricing Calculator"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"//a[@href=\"https://cloud.google.com/products/calculator?hl=en\"]"}
+RESULT: {"using":"xpath","value":"//a[@href=\"https://cloud.google.com/products/calculator?hl=en\"]"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/elements - {"using":"xpath","value":"//a[@href=\"https://cloud.google.com/products/calculator?hl=en\"]"}
+RESULT: {"using":"xpath","value":"//a[@href=\"https://cloud.google.com/products/calculator?hl=en\"]"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/elements - {"using":"xpath","value":"//a[@href=\"https://cloud.google.com/products/calculator?hl=en\"]"}
+RESULT: {"using":"xpath","value":"//a[@href=\"https://cloud.google.com/products/calculator?hl=en\"]"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"//a[@href=\"https://cloud.google.com/products/calculator?hl=en\"]"}
+RESULT: {"using":"xpath","value":"//a[@href=\"https://cloud.google.com/products/calculator?hl=en\"]"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element/6e58604b-b792-4009-a115-c5282052373f/click - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.108_0_5359_125.windows.Entire_test_scenario" name="Should open calculator page" time="0.069">
+      <system-out><![CDATA[
+COMMAND: GET /session/c73726095fc9a924e2e15d8555a92c44/title - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.108_0_5359_125.windows.Entire_test_scenario" name="Should switch on outer frame" time="0.309">
+      <system-out><![CDATA[
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/timeouts - {"pageLoad":5000}
+RESULT: {"pageLoad":5000}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"css selector","value":"devsite-iframe > iframe"}
+RESULT: {"using":"css selector","value":"devsite-iframe > iframe"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/elements - {"using":"css selector","value":"devsite-iframe > iframe"}
+RESULT: {"using":"css selector","value":"devsite-iframe > iframe"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/frame - {"id":{"sessionId":"c73726095fc9a924e2e15d8555a92c44","elementId":"d2f35366-9e1c-4c52-9323-962e50791808","element-6066-11e4-a52e-4f735466cecf":"d2f35366-9e1c-4c52-9323-962e50791808","selector":"devsite-iframe > iframe","parent":{"capabilities":{"acceptInsecureCerts":true,"browserName":"chrome","browserVersion":"108.0.5359.125","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\Admin\\AppData\\Local\\Temp\\scoped_dir16504_1362168251"},"goog:chromeOptions":{"debuggerAddress":"localhost:50682"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"WINDOWS","proxy":{},"se:cdp":"ws://192.168.0.14:4444/session/c73726095fc9a924e2e15d8555a92c44/se/cdp","_":"8 more keys: [\"se:cdpVersion\",\"setWindowRect\",\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\",\"webauthn:extension:credBlob\",\"webauthn:extension:largeBlob\",\"webauthn:virtualAuthenticators\"]"}},"isReactElement":false}}
+RESULT: {"id":{"sessionId":"c73726095fc9a924e2e15d8555a92c44","elementId":"d2f35366-9e1c-4c52-9323-962e50791808","element-6066-11e4-a52e-4f735466cecf":"d2f35366-9e1c-4c52-9323-962e50791808","selector":"devsite-iframe > iframe","parent":{"capabilities":{"acceptInsecureCerts":true,"browserName":"chrome","browserVersion":"108.0.5359.125","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\Admin\\AppData\\Local\\Temp\\scoped_dir16504_1362168251"},"goog:chromeOptions":{"debuggerAddress":"localhost:50682"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"WINDOWS","proxy":{},"se:cdp":"ws://192.168.0.14:4444/session/c73726095fc9a924e2e15d8555a92c44/se/cdp","_":"8 more keys: [\"se:cdpVersion\",\"setWindowRect\",\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\",\"webauthn:extension:credBlob\",\"webauthn:extension:largeBlob\",\"webauthn:virtualAuthenticators\"]"}},"isReactElement":false}}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.108_0_5359_125.windows.Entire_test_scenario" name="Should switch on inner frame" time="0.143">
+      <system-out><![CDATA[
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"//div/iframe"}
+RESULT: {"using":"xpath","value":"//div/iframe"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/elements - {"using":"xpath","value":"//div/iframe"}
+RESULT: {"using":"xpath","value":"//div/iframe"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/frame - {"id":{"sessionId":"c73726095fc9a924e2e15d8555a92c44","elementId":"e28deb3d-94af-4537-b34f-99a170143200","element-6066-11e4-a52e-4f735466cecf":"e28deb3d-94af-4537-b34f-99a170143200","selector":"//div/iframe","parent":{"capabilities":{"acceptInsecureCerts":true,"browserName":"chrome","browserVersion":"108.0.5359.125","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\Admin\\AppData\\Local\\Temp\\scoped_dir16504_1362168251"},"goog:chromeOptions":{"debuggerAddress":"localhost:50682"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"WINDOWS","proxy":{},"se:cdp":"ws://192.168.0.14:4444/session/c73726095fc9a924e2e15d8555a92c44/se/cdp","_":"8 more keys: [\"se:cdpVersion\",\"setWindowRect\",\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\",\"webauthn:extension:credBlob\",\"webauthn:extension:largeBlob\",\"webauthn:virtualAuthenticators\"]"}},"isReactElement":false}}
+RESULT: {"id":{"sessionId":"c73726095fc9a924e2e15d8555a92c44","elementId":"e28deb3d-94af-4537-b34f-99a170143200","element-6066-11e4-a52e-4f735466cecf":"e28deb3d-94af-4537-b34f-99a170143200","selector":"//div/iframe","parent":{"capabilities":{"acceptInsecureCerts":true,"browserName":"chrome","browserVersion":"108.0.5359.125","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\Admin\\AppData\\Local\\Temp\\scoped_dir16504_1362168251"},"goog:chromeOptions":{"debuggerAddress":"localhost:50682"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"WINDOWS","proxy":{},"se:cdp":"ws://192.168.0.14:4444/session/c73726095fc9a924e2e15d8555a92c44/se/cdp","_":"8 more keys: [\"se:cdpVersion\",\"setWindowRect\",\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\",\"webauthn:extension:credBlob\",\"webauthn:extension:largeBlob\",\"webauthn:virtualAuthenticators\"]"}},"isReactElement":false}}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.108_0_5359_125.windows.Entire_test_scenario" name="Should choose given value for number of instances" time="0.331">
+      <system-out><![CDATA[
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"css selector","value":"#input_90"}
+RESULT: {"using":"css selector","value":"#input_90"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element/7ec2eaa1-2e1c-4d6e-80a8-6c4547cc473f/clear - {}
+RESULT: {}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element/7ec2eaa1-2e1c-4d6e-80a8-6c4547cc473f/value - {"text":"4"}
+RESULT: {"text":"4"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"css selector","value":"#input_90"}
+RESULT: {"using":"css selector","value":"#input_90"}
+COMMAND: GET /session/c73726095fc9a924e2e15d8555a92c44/element/7ec2eaa1-2e1c-4d6e-80a8-6c4547cc473f/property/value - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.108_0_5359_125.windows.Entire_test_scenario" name="Should select given value for Series dropdown" time="1.019">
+      <system-out><![CDATA[
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"//md-select[@id=\"select_115\"]"}
+RESULT: {"using":"xpath","value":"//md-select[@id=\"select_115\"]"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element/c2e34889-4ff6-415e-be6b-5137c800524a/click - {}
+RESULT: {}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"//div[contains(text(), \"N1\")]"}
+RESULT: {"using":"xpath","value":"//div[contains(text(), \"N1\")]"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element/f5f2b4e5-5cd5-4600-91cb-bfe76eed287c/click - {}
+RESULT: {}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"//md-select[@id=\"select_115\"]"}
+RESULT: {"using":"xpath","value":"//md-select[@id=\"select_115\"]"}
+COMMAND: GET /session/c73726095fc9a924e2e15d8555a92c44/element/c2e34889-4ff6-415e-be6b-5137c800524a/attribute/aria-label - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.108_0_5359_125.windows.Entire_test_scenario" name="Should choose given option for Machine type" time="0.732">
+      <system-out><![CDATA[
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"//md-select[@id=\"select_117\"]"}
+RESULT: {"using":"xpath","value":"//md-select[@id=\"select_117\"]"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element/d8ed7ad8-f6d4-406b-81a3-38626752141a/click - {}
+RESULT: {}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"//div[contains(text(), \"n1-standard-8\")]"}
+RESULT: {"using":"xpath","value":"//div[contains(text(), \"n1-standard-8\")]"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element/2c1a5db8-e48c-4a88-a0c0-09e0bfc9e080/click - {}
+RESULT: {}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"//md-select[@id=\"select_117\"]"}
+RESULT: {"using":"xpath","value":"//md-select[@id=\"select_117\"]"}
+COMMAND: GET /session/c73726095fc9a924e2e15d8555a92c44/element/d8ed7ad8-f6d4-406b-81a3-38626752141a/attribute/aria-label - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.108_0_5359_125.windows.Entire_test_scenario" name="Should cllck on AddGPU checkbox" time="0.708">
+      <system-out><![CDATA[
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"(//md-checkbox)[3]"}
+RESULT: {"using":"xpath","value":"(//md-checkbox)[3]"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element/ca6799e6-6fc5-442f-b052-fc377f114980/click - {}
+RESULT: {}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"(//md-checkbox)[3]"}
+RESULT: {"using":"xpath","value":"(//md-checkbox)[3]"}
+COMMAND: GET /session/c73726095fc9a924e2e15d8555a92c44/element/ca6799e6-6fc5-442f-b052-fc377f114980/attribute/aria-checked - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.108_0_5359_125.windows.Entire_test_scenario" name="Should select given type of GPU" time="0.699">
+      <system-out><![CDATA[
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"(//md-select[@placeholder=\"GPU type\"])[1]"}
+RESULT: {"using":"xpath","value":"(//md-select[@placeholder=\"GPU type\"])[1]"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element/f1922597-c219-447c-98dc-34f1f6bcd48a/click - {}
+RESULT: {}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"//div[contains(text(),\"NVIDIA Tesla V100\")]"}
+RESULT: {"using":"xpath","value":"//div[contains(text(),\"NVIDIA Tesla V100\")]"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element/27bfda94-f415-4ecb-8065-57c12be82956/click - {}
+RESULT: {}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"(//md-select[@placeholder=\"GPU type\"])[1]"}
+RESULT: {"using":"xpath","value":"(//md-select[@placeholder=\"GPU type\"])[1]"}
+COMMAND: GET /session/c73726095fc9a924e2e15d8555a92c44/element/f1922597-c219-447c-98dc-34f1f6bcd48a/attribute/aria-label - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.108_0_5359_125.windows.Entire_test_scenario" name="Should select given number of GPUs" time="0.748">
+      <system-out><![CDATA[
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/actions - {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":0,"y":0,"deltaX":0,"deltaY":400,"duration":200}]}]}
+RESULT: {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":0,"y":0,"deltaX":0,"deltaY":400,"duration":200}]}]}
+COMMAND: DELETE /session/c73726095fc9a924e2e15d8555a92c44/actions - {}
+RESULT: {}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"//md-select[@placeholder=\"Number of GPUs\"]"}
+RESULT: {"using":"xpath","value":"//md-select[@placeholder=\"Number of GPUs\"]"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element/13e9d71d-608c-4688-a2f3-6e71fdfb4293/click - {}
+RESULT: {}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"(//md-option[@value=\"1\"])[14]"}
+RESULT: {"using":"xpath","value":"(//md-option[@value=\"1\"])[14]"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element/5828cab8-183c-49cf-8326-07d65190788d/click - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.108_0_5359_125.windows.Entire_test_scenario" name="Should select given number of LocalSSD" time="0.671">
+      <system-out><![CDATA[
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"(//md-select[@placeholder=\"Local SSD\"])[1]"}
+RESULT: {"using":"xpath","value":"(//md-select[@placeholder=\"Local SSD\"])[1]"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element/0f42368e-0e8d-4700-81d0-4da3efb3bbac/click - {}
+RESULT: {}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"//div[contains(text(), \"2x375 GB\")]"}
+RESULT: {"using":"xpath","value":"//div[contains(text(), \"2x375 GB\")]"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element/111550f2-860d-45f5-83d7-e86619f87ffa/click - {}
+RESULT: {}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"(//md-select[@placeholder=\"Local SSD\"])[1]"}
+RESULT: {"using":"xpath","value":"(//md-select[@placeholder=\"Local SSD\"])[1]"}
+COMMAND: GET /session/c73726095fc9a924e2e15d8555a92c44/element/0f42368e-0e8d-4700-81d0-4da3efb3bbac/attribute/aria-label - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.108_0_5359_125.windows.Entire_test_scenario" name="Should select given option for Datacenter Location" time="1.484">
+      <system-out><![CDATA[
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/actions - {"actions":[{"id":"action2","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":0,"y":0,"deltaX":0,"deltaY":400,"duration":200}]}]}
+RESULT: {"actions":[{"id":"action2","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":0,"y":0,"deltaX":0,"deltaY":400,"duration":200}]}]}
+COMMAND: DELETE /session/c73726095fc9a924e2e15d8555a92c44/actions - {}
+RESULT: {}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"(//md-select[@placeholder=\"Datacenter location\"])[1]"}
+RESULT: {"using":"xpath","value":"(//md-select[@placeholder=\"Datacenter location\"])[1]"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element/87c7e5ca-4812-4d43-bed9-26d531a869b1/click - {}
+RESULT: {}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"//md-option[@id=\"select_option_228\"]"}
+RESULT: {"using":"xpath","value":"//md-option[@id=\"select_option_228\"]"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7763 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"0f06fccf-b2ed-4195-afee-6407c103e333","ELEMENT":"0f06fccf-b2ed-4195-afee-6407c103e333"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7763 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"0f06fccf-b2ed-4195-afee-6407c103e333","ELEMENT":"0f06fccf-b2ed-4195-afee-6407c103e333"}]}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7763 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"0f06fccf-b2ed-4195-afee-6407c103e333","ELEMENT":"0f06fccf-b2ed-4195-afee-6407c103e333"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7763 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"0f06fccf-b2ed-4195-afee-6407c103e333","ELEMENT":"0f06fccf-b2ed-4195-afee-6407c103e333"}]}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"//md-option[@id=\"select_option_228\"]"}
+RESULT: {"using":"xpath","value":"//md-option[@id=\"select_option_228\"]"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element/0f06fccf-b2ed-4195-afee-6407c103e333/click - {}
+RESULT: {}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"(//md-select[@placeholder=\"Datacenter location\"])[1]"}
+RESULT: {"using":"xpath","value":"(//md-select[@placeholder=\"Datacenter location\"])[1]"}
+COMMAND: GET /session/c73726095fc9a924e2e15d8555a92c44/element/87c7e5ca-4812-4d43-bed9-26d531a869b1/attribute/aria-label - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.108_0_5359_125.windows.Entire_test_scenario" name="Should select given value fot Commitment term" time="0.681">
+      <system-out><![CDATA[
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"(//md-select[@placeholder=\"Committed usage\"])[1]"}
+RESULT: {"using":"xpath","value":"(//md-select[@placeholder=\"Committed usage\"])[1]"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element/a32e8e36-b2ef-4f8d-9e51-985877bec1d1/click - {}
+RESULT: {}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"//md-option[@id=\"select_option_128\"]"}
+RESULT: {"using":"xpath","value":"//md-option[@id=\"select_option_128\"]"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element/e4ba9723-9807-49c7-b1e5-e4cfdc0963bc/click - {}
+RESULT: {}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"(//md-select[@placeholder=\"Committed usage\"])[1]"}
+RESULT: {"using":"xpath","value":"(//md-select[@placeholder=\"Committed usage\"])[1]"}
+COMMAND: GET /session/c73726095fc9a924e2e15d8555a92c44/element/a32e8e36-b2ef-4f8d-9e51-985877bec1d1/attribute/aria-label - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.108_0_5359_125.windows.Entire_test_scenario" name="Should Add to Estimate" time="0.785">
+      <system-out><![CDATA[
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"//button[@aria-label=\"Add to Estimate\"]"}
+RESULT: {"using":"xpath","value":"//button[@aria-label=\"Add to Estimate\"]"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element/c9e1b124-72df-4166-94f3-47dca06157eb/click - {}
+RESULT: {}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"//md-content[@id=\"compute\"]"}
+RESULT: {"using":"xpath","value":"//md-content[@id=\"compute\"]"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7763 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"91ea1e0f-0f63-4e5a-8174-891f73083c69","ELEMENT":"91ea1e0f-0f63-4e5a-8174-891f73083c69"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7763 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"91ea1e0f-0f63-4e5a-8174-891f73083c69","ELEMENT":"91ea1e0f-0f63-4e5a-8174-891f73083c69"}]}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.108_0_5359_125.windows.Entire_test_scenario" name="Should match values for region in receipt and selected one" time="0.209">
+      <system-out><![CDATA[
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"//div[contains(text(), \"Region: \")]"}
+RESULT: {"using":"xpath","value":"//div[contains(text(), \"Region: \")]"}
+COMMAND: GET /session/c73726095fc9a924e2e15d8555a92c44/element/34b8678e-9635-48fe-a38f-fe528e9eb175/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.108_0_5359_125.windows.Entire_test_scenario" name="Should match values for commitment term in receipt and selected one" time="0.097">
+      <system-out><![CDATA[
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"//div[contains(text(), \"Commitment term: \")]"}
+RESULT: {"using":"xpath","value":"//div[contains(text(), \"Commitment term: \")]"}
+COMMAND: GET /session/c73726095fc9a924e2e15d8555a92c44/element/93a823b0-d482-45f8-9f65-eb16b3378afe/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.108_0_5359_125.windows.Entire_test_scenario" name="Should match values for local SSD in receipt and selected one" time="0.096">
+      <system-out><![CDATA[
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"//div[contains(text(), \"Local SSD: \")]"}
+RESULT: {"using":"xpath","value":"//div[contains(text(), \"Local SSD: \")]"}
+COMMAND: GET /session/c73726095fc9a924e2e15d8555a92c44/element/4689823e-0d1a-4e11-ba7c-c223c6bfe085/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.108_0_5359_125.windows.Entire_test_scenario" name="Should match values for vm class in receipt and selected one" time="0.126">
+      <system-out><![CDATA[
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"//div[contains(text(), \"Provisioning model: \")]"}
+RESULT: {"using":"xpath","value":"//div[contains(text(), \"Provisioning model: \")]"}
+COMMAND: GET /session/c73726095fc9a924e2e15d8555a92c44/element/f09a4b1d-90ec-4a7d-bc18-d73fa5a751d8/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.108_0_5359_125.windows.Entire_test_scenario" name="Should match values for vm instance type in receipt and selected one" time="0.084">
+      <system-out><![CDATA[
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"//div[contains(text(), \"Instance type: \")]"}
+RESULT: {"using":"xpath","value":"//div[contains(text(), \"Instance type: \")]"}
+COMMAND: GET /session/c73726095fc9a924e2e15d8555a92c44/element/fa1ed476-13dc-4449-9699-13b574e4f9e5/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.108_0_5359_125.windows.Entire_test_scenario" name="Should match values for total price in receipt and price received during manual check" time="0.21">
+      <system-out><![CDATA[
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"//b[contains(text(), \"Total Estimated Cost\")]"}
+RESULT: {"using":"xpath","value":"//b[contains(text(), \"Total Estimated Cost\")]"}
+COMMAND: GET /session/c73726095fc9a924e2e15d8555a92c44/element/a0fbc6a5-6b82-4829-8e6c-a825d342190a/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.108_0_5359_125.windows.Entire_test_scenario" name="Should click on Email Estimate Button" time="0.247">
+      <system-out><![CDATA[
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"//button[@id=\"Email Estimate\"]"}
+RESULT: {"using":"xpath","value":"//button[@id=\"Email Estimate\"]"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element/00080bc1-bdb3-4878-bd38-cf67e8484798/click - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.108_0_5359_125.windows.Entire_test_scenario" name="Should open new tab" time="2.518">
+      <system-out><![CDATA[
+COMMAND: GET /session/c73726095fc9a924e2e15d8555a92c44/window/handles - {}
+RESULT: {}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/execute/sync - {"script":"return (function newWindow(url, windowName, windowFeatures) {\n    window.open(url, windowName || '', windowFeatures || '');\n}).apply(null, arguments)","args":["https://10minutemail.com/","10 Minutes mail",""]}
+RESULT: {"script":"return (function newWindow(url, windowName, windowFeatures) {\n    window.open(url, windowName || '', windowFeatures || '');\n}).apply(null, arguments)","args":["https://10minutemail.com/","10 Minutes mail",""]}
+COMMAND: GET /session/c73726095fc9a924e2e15d8555a92c44/window/handles - {}
+RESULT: {}
+COMMAND: GET /session/c73726095fc9a924e2e15d8555a92c44/window/handles - {}
+RESULT: {}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/window - {"handle":"CDwindow-20B6B785C84E76C5F043483A0FFD7A57"}
+RESULT: {"handle":"CDwindow-20B6B785C84E76C5F043483A0FFD7A57"}
+COMMAND: GET /session/c73726095fc9a924e2e15d8555a92c44/title - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.108_0_5359_125.windows.Entire_test_scenario" name="Should paste generated email into Email Estimate form" time="2.046">
+      <system-out><![CDATA[
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"//input[@id=\"mail_address\"]"}
+RESULT: {"using":"xpath","value":"//input[@id=\"mail_address\"]"}
+COMMAND: GET /session/c73726095fc9a924e2e15d8555a92c44/element/888badb3-ea06-4cea-9dff-2db73e38d68c/property/value - {}
+RESULT: {}
+COMMAND: GET /session/c73726095fc9a924e2e15d8555a92c44/window/handles - {}
+RESULT: {}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/window - {"handle":"CDwindow-8C416F6DA65BB34CDB3D0551A0DD18B2"}
+RESULT: {"handle":"CDwindow-8C416F6DA65BB34CDB3D0551A0DD18B2"}
+COMMAND: GET /session/c73726095fc9a924e2e15d8555a92c44/url - {}
+RESULT: {}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"css selector","value":"devsite-iframe > iframe"}
+RESULT: {"using":"css selector","value":"devsite-iframe > iframe"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/elements - {"using":"css selector","value":"devsite-iframe > iframe"}
+RESULT: {"using":"css selector","value":"devsite-iframe > iframe"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/frame - {"id":{"sessionId":"c73726095fc9a924e2e15d8555a92c44","elementId":"d2f35366-9e1c-4c52-9323-962e50791808","element-6066-11e4-a52e-4f735466cecf":"d2f35366-9e1c-4c52-9323-962e50791808","selector":"devsite-iframe > iframe","parent":{"capabilities":{"acceptInsecureCerts":true,"browserName":"chrome","browserVersion":"108.0.5359.125","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\Admin\\AppData\\Local\\Temp\\scoped_dir16504_1362168251"},"goog:chromeOptions":{"debuggerAddress":"localhost:50682"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"WINDOWS","proxy":{},"se:cdp":"ws://192.168.0.14:4444/session/c73726095fc9a924e2e15d8555a92c44/se/cdp","_":"8 more keys: [\"se:cdpVersion\",\"setWindowRect\",\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\",\"webauthn:extension:credBlob\",\"webauthn:extension:largeBlob\",\"webauthn:virtualAuthenticators\"]"}},"isReactElement":false}}
+RESULT: {"id":{"sessionId":"c73726095fc9a924e2e15d8555a92c44","elementId":"d2f35366-9e1c-4c52-9323-962e50791808","element-6066-11e4-a52e-4f735466cecf":"d2f35366-9e1c-4c52-9323-962e50791808","selector":"devsite-iframe > iframe","parent":{"capabilities":{"acceptInsecureCerts":true,"browserName":"chrome","browserVersion":"108.0.5359.125","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\Admin\\AppData\\Local\\Temp\\scoped_dir16504_1362168251"},"goog:chromeOptions":{"debuggerAddress":"localhost:50682"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"WINDOWS","proxy":{},"se:cdp":"ws://192.168.0.14:4444/session/c73726095fc9a924e2e15d8555a92c44/se/cdp","_":"8 more keys: [\"se:cdpVersion\",\"setWindowRect\",\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\",\"webauthn:extension:credBlob\",\"webauthn:extension:largeBlob\",\"webauthn:virtualAuthenticators\"]"}},"isReactElement":false}}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"//div/iframe"}
+RESULT: {"using":"xpath","value":"//div/iframe"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/elements - {"using":"xpath","value":"//div/iframe"}
+RESULT: {"using":"xpath","value":"//div/iframe"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/frame - {"id":{"sessionId":"c73726095fc9a924e2e15d8555a92c44","elementId":"e28deb3d-94af-4537-b34f-99a170143200","element-6066-11e4-a52e-4f735466cecf":"e28deb3d-94af-4537-b34f-99a170143200","selector":"//div/iframe","parent":{"capabilities":{"acceptInsecureCerts":true,"browserName":"chrome","browserVersion":"108.0.5359.125","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\Admin\\AppData\\Local\\Temp\\scoped_dir16504_1362168251"},"goog:chromeOptions":{"debuggerAddress":"localhost:50682"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"WINDOWS","proxy":{},"se:cdp":"ws://192.168.0.14:4444/session/c73726095fc9a924e2e15d8555a92c44/se/cdp","_":"8 more keys: [\"se:cdpVersion\",\"setWindowRect\",\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\",\"webauthn:extension:credBlob\",\"webauthn:extension:largeBlob\",\"webauthn:virtualAuthenticators\"]"}},"isReactElement":false}}
+RESULT: {"id":{"sessionId":"c73726095fc9a924e2e15d8555a92c44","elementId":"e28deb3d-94af-4537-b34f-99a170143200","element-6066-11e4-a52e-4f735466cecf":"e28deb3d-94af-4537-b34f-99a170143200","selector":"//div/iframe","parent":{"capabilities":{"acceptInsecureCerts":true,"browserName":"chrome","browserVersion":"108.0.5359.125","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\Admin\\AppData\\Local\\Temp\\scoped_dir16504_1362168251"},"goog:chromeOptions":{"debuggerAddress":"localhost:50682"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"WINDOWS","proxy":{},"se:cdp":"ws://192.168.0.14:4444/session/c73726095fc9a924e2e15d8555a92c44/se/cdp","_":"8 more keys: [\"se:cdpVersion\",\"setWindowRect\",\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\",\"webauthn:extension:credBlob\",\"webauthn:extension:largeBlob\",\"webauthn:virtualAuthenticators\"]"}},"isReactElement":false}}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"(//input[@name=\"description\"])[3]"}
+RESULT: {"using":"xpath","value":"(//input[@name=\"description\"])[3]"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7763 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f5f53501-3674-48a9-a67f-8ec73263da59","ELEMENT":"f5f53501-3674-48a9-a67f-8ec73263da59"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7763 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f5f53501-3674-48a9-a67f-8ec73263da59","ELEMENT":"f5f53501-3674-48a9-a67f-8ec73263da59"}]}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/actions - {"actions":[{"id":"action3","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":0,"y":0,"deltaX":0,"deltaY":200,"duration":200}]}]}
+RESULT: {"actions":[{"id":"action3","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":0,"y":0,"deltaX":0,"deltaY":200,"duration":200}]}]}
+COMMAND: DELETE /session/c73726095fc9a924e2e15d8555a92c44/actions - {}
+RESULT: {}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"(//input[@name=\"description\"])[3]"}
+RESULT: {"using":"xpath","value":"(//input[@name=\"description\"])[3]"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element/f5f53501-3674-48a9-a67f-8ec73263da59/clear - {}
+RESULT: {}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element/f5f53501-3674-48a9-a67f-8ec73263da59/value - {"text":"fofsodkwilhrczlyuq@tmmbt.com"}
+RESULT: {"text":"fofsodkwilhrczlyuq@tmmbt.com"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"(//input[@name=\"description\"])[3]"}
+RESULT: {"using":"xpath","value":"(//input[@name=\"description\"])[3]"}
+COMMAND: GET /session/c73726095fc9a924e2e15d8555a92c44/element/f5f53501-3674-48a9-a67f-8ec73263da59/property/value - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.108_0_5359_125.windows.Entire_test_scenario" name="Should click on Send Email button" time="0.65">
+      <system-out><![CDATA[
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"//button[@aria-label=\"Send Email\"]"}
+RESULT: {"using":"xpath","value":"//button[@aria-label=\"Send Email\"]"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element/acb9cd61-9b58-4e3d-b2f0-0bb1cc2dfef0/click - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.108_0_5359_125.windows.Entire_test_scenario" name="Should recieve email" time="6.254">
+      <system-out><![CDATA[
+COMMAND: GET /session/c73726095fc9a924e2e15d8555a92c44/window/handles - {}
+RESULT: {}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/window - {"handle":"CDwindow-8C416F6DA65BB34CDB3D0551A0DD18B2"}
+RESULT: {"handle":"CDwindow-8C416F6DA65BB34CDB3D0551A0DD18B2"}
+COMMAND: GET /session/c73726095fc9a924e2e15d8555a92c44/url - {}
+RESULT: {}
+COMMAND: GET /session/c73726095fc9a924e2e15d8555a92c44/title - {}
+RESULT: {}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/execute/sync - {"script":"return (() => window.name).apply(null, arguments)","args":[]}
+RESULT: {"script":"return (() => window.name).apply(null, arguments)","args":[]}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/window - {"handle":"CDwindow-20B6B785C84E76C5F043483A0FFD7A57"}
+RESULT: {"handle":"CDwindow-20B6B785C84E76C5F043483A0FFD7A57"}
+COMMAND: GET /session/c73726095fc9a924e2e15d8555a92c44/url - {}
+RESULT: {}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/refresh - {}
+RESULT: {}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/actions - {"actions":[{"id":"action4","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":0,"y":0,"deltaX":0,"deltaY":800,"duration":200}]}]}
+RESULT: {"actions":[{"id":"action4","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":0,"y":0,"deltaX":0,"deltaY":800,"duration":200}]}]}
+COMMAND: DELETE /session/c73726095fc9a924e2e15d8555a92c44/actions - {}
+RESULT: {}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+RESULT: {"using":"xpath","value":"//div[@class=\"small_subject\"]/span"}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element/ac311599-11fe-4712-89cf-abdc7b2550a3/click - {}
+RESULT: {}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"(//table)[2]//tr[2]/td/h3"}
+RESULT: {"using":"xpath","value":"(//table)[2]//tr[2]/td/h3"}
+COMMAND: GET /session/c73726095fc9a924e2e15d8555a92c44/element/b9f9d99f-d100-4a7c-adf2-34878cd6e713/text - {}
+RESULT: {}
+COMMAND: POST /session/c73726095fc9a924e2e15d8555a92c44/element - {"using":"xpath","value":"(//table)[2]//tr[2]/td/h3/../following-sibling::td/h3"}
+RESULT: {"using":"xpath","value":"(//table)[2]//tr[2]/td/h3/../following-sibling::td/h3"}
+COMMAND: GET /session/c73726095fc9a924e2e15d8555a92c44/element/50e1c68e-1395-4d9c-8b91-283bb94867f0/text - {}
+RESULT: {}
+COMMAND: DELETE /session/c73726095fc9a924e2e15d8555a92c44 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
