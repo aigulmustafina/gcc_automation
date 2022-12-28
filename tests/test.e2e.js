@@ -4,7 +4,6 @@ import TempEmailPage from '../po/pages/tempEmail.page.js';
 
 describe('Hardcore - regression', () => {
     before(async () => {
-        await browser.maximizeWindow()
         await HomePage.open();
         await HomePage.goToCalculatorPage();
         await CalculatorPage.switchFrames();

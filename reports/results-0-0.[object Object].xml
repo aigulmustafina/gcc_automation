@@ -1,20 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Hardcore regression" timestamp="2022-12-28T22:21:41" time="42.063" tests="1" failures="1" errors="1" skipped="0">
+  <testsuite name="Hurt me plenty regression" timestamp="2022-12-29T00:40:12" time="21.364" tests="6" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
-      <property name="suiteName" value="Hardcore - regression"/>
+      <property name="suiteName" value="Hurt me plenty - regression"/>
       <property name="capabilities" value="chrome.108_0_5359_125.windows"/>
-      <property name="file" value="file:///C:/Users/Admin/googleCloudCalculatorProject/tests/test.e2e.js"/>
+      <property name="file" value="file:///C:/Users/Admin/googleCloudCalculatorProject/tests/test.HMPregression.js"/>
     </properties>
-    <testcase classname="chrome.108_0_5359_125.windows.Hardcore_-_regression" name="before all hook for Hardcore regression" time="42.046">
-      <failure/>
-      <error message="Can't call click on element with selector &quot;//span[contains(text(), &quot;Google Cloud Price Estimate&quot;)]&quot; because element wasn't found"/>
-      <system-err><![CDATA[
-Error: Can't call click on element with selector "//span[contains(text(), "Google Cloud Price Estimate")]" because element wasn't found
-    at async TempEmailPage.getEmailContent (file:///C:/Users/Admin/googleCloudCalculatorProject/po/pages/tempEmail.page.js:21:9)
-    at async Context.<anonymous> (file:///C:/Users/Admin/googleCloudCalculatorProject/tests/test.e2e.js:24:9)
-]]></system-err>
+    <testcase classname="chrome.108_0_5359_125.windows.Hurt_me_plenty_-_regression" name="Should be valid value" time="0.395">
+      <system-out><![CDATA[
+COMMAND: POST /session/2990c98ca0c06c8e16be1210d0c3baa3/element - {"using":"xpath","value":"//md-content[@id=\"compute\"]"}
+RESULT: {"using":"xpath","value":"//md-content[@id=\"compute\"]"}
+COMMAND: GET /session/2990c98ca0c06c8e16be1210d0c3baa3/element/f892f1e4-fd38-488a-aef0-6514399e4b55/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.108_0_5359_125.windows.Hurt_me_plenty_-_regression" name="Should be valid value" time="0.275">
+      <system-out><![CDATA[
+COMMAND: POST /session/2990c98ca0c06c8e16be1210d0c3baa3/element - {"using":"xpath","value":"//md-content[@id=\"compute\"]"}
+RESULT: {"using":"xpath","value":"//md-content[@id=\"compute\"]"}
+COMMAND: GET /session/2990c98ca0c06c8e16be1210d0c3baa3/element/f892f1e4-fd38-488a-aef0-6514399e4b55/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.108_0_5359_125.windows.Hurt_me_plenty_-_regression" name="Should be valid value" time="0.097">
+      <system-out><![CDATA[
+COMMAND: POST /session/2990c98ca0c06c8e16be1210d0c3baa3/element - {"using":"xpath","value":"//md-content[@id=\"compute\"]"}
+RESULT: {"using":"xpath","value":"//md-content[@id=\"compute\"]"}
+COMMAND: GET /session/2990c98ca0c06c8e16be1210d0c3baa3/element/f892f1e4-fd38-488a-aef0-6514399e4b55/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.108_0_5359_125.windows.Hurt_me_plenty_-_regression" name="Should be valid value" time="0.155">
+      <system-out><![CDATA[
+COMMAND: POST /session/2990c98ca0c06c8e16be1210d0c3baa3/element - {"using":"xpath","value":"//md-content[@id=\"compute\"]"}
+RESULT: {"using":"xpath","value":"//md-content[@id=\"compute\"]"}
+COMMAND: GET /session/2990c98ca0c06c8e16be1210d0c3baa3/element/f892f1e4-fd38-488a-aef0-6514399e4b55/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.108_0_5359_125.windows.Hurt_me_plenty_-_regression" name="Should be valid value" time="0.109">
+      <system-out><![CDATA[
+COMMAND: POST /session/2990c98ca0c06c8e16be1210d0c3baa3/element - {"using":"xpath","value":"//md-content[@id=\"compute\"]"}
+RESULT: {"using":"xpath","value":"//md-content[@id=\"compute\"]"}
+COMMAND: GET /session/2990c98ca0c06c8e16be1210d0c3baa3/element/f892f1e4-fd38-488a-aef0-6514399e4b55/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.108_0_5359_125.windows.Hurt_me_plenty_-_regression" name="Should be valid value" time="0.088">
+      <system-out><![CDATA[
+COMMAND: POST /session/2990c98ca0c06c8e16be1210d0c3baa3/element - {"using":"xpath","value":"//md-content[@id=\"compute\"]"}
+RESULT: {"using":"xpath","value":"//md-content[@id=\"compute\"]"}
+COMMAND: GET /session/2990c98ca0c06c8e16be1210d0c3baa3/element/f892f1e4-fd38-488a-aef0-6514399e4b55/text - {}
+RESULT: {}
+COMMAND: DELETE /session/2990c98ca0c06c8e16be1210d0c3baa3/window - {}
+COMMAND: DELETE /session/2990c98ca0c06c8e16be1210d0c3baa3 - {}
+RESULT: {}
+]]></system-out>
     </testcase>
   </testsuite>
 </testsuites>
