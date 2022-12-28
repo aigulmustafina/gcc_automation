@@ -1,5 +1,6 @@
 import HomePage from '../po/pages/home.page.js';
 import TempEmailPage from '../po/pages/tempEmail.page.js';
+import titles from '../testdata/pageTitles.js';
 
 describe('Hardcore - smoke', () => {
     before(async () => {
@@ -11,7 +12,7 @@ describe('Hardcore - smoke', () => {
     });
     
     it('Should open 10 Minute Email page in a new tab', async () => {
-        await expect(browser).toHaveTitle('10 Minute Mail - Free Anonymous Temporary email - 10 Minute Mail - Free Anonymous Temporary email');
+        await expect(browser).toHaveTitle(titles.tempEmail);
     });
 
     after(async () => {

@@ -1,60 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Hurt me plenty regression" timestamp="2022-12-29T00:40:12" time="21.364" tests="6" failures="0" errors="0" skipped="0">
+  <testsuite name="Hardcore smoke" timestamp="2022-12-29T04:39:30" time="7.589" tests="1" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
-      <property name="suiteName" value="Hurt me plenty - regression"/>
+      <property name="suiteName" value="Hardcore - smoke"/>
       <property name="capabilities" value="chrome.108_0_5359_125.windows"/>
-      <property name="file" value="file:///C:/Users/Admin/googleCloudCalculatorProject/tests/test.HMPregression.js"/>
+      <property name="file" value="file:///C:/Users/Admin/googleCloudCalculatorProject/tests/test.HCsmoke.js"/>
     </properties>
-    <testcase classname="chrome.108_0_5359_125.windows.Hurt_me_plenty_-_regression" name="Should be valid value" time="0.395">
+    <testcase classname="chrome.108_0_5359_125.windows.Hardcore_-_smoke" name="Should open 10 Minute Email page in a new tab" time="1.609">
       <system-out><![CDATA[
-COMMAND: POST /session/2990c98ca0c06c8e16be1210d0c3baa3/element - {"using":"xpath","value":"//md-content[@id=\"compute\"]"}
-RESULT: {"using":"xpath","value":"//md-content[@id=\"compute\"]"}
-COMMAND: GET /session/2990c98ca0c06c8e16be1210d0c3baa3/element/f892f1e4-fd38-488a-aef0-6514399e4b55/text - {}
+COMMAND: GET /session/fab28f7fa3b4bfbae2acfe06a67f0adb/title - {}
 RESULT: {}
-]]></system-out>
-    </testcase>
-    <testcase classname="chrome.108_0_5359_125.windows.Hurt_me_plenty_-_regression" name="Should be valid value" time="0.275">
-      <system-out><![CDATA[
-COMMAND: POST /session/2990c98ca0c06c8e16be1210d0c3baa3/element - {"using":"xpath","value":"//md-content[@id=\"compute\"]"}
-RESULT: {"using":"xpath","value":"//md-content[@id=\"compute\"]"}
-COMMAND: GET /session/2990c98ca0c06c8e16be1210d0c3baa3/element/f892f1e4-fd38-488a-aef0-6514399e4b55/text - {}
+COMMAND: DELETE /session/fab28f7fa3b4bfbae2acfe06a67f0adb/window - {}
+COMMAND: DELETE /session/fab28f7fa3b4bfbae2acfe06a67f0adb - {}
 RESULT: {}
-]]></system-out>
-    </testcase>
-    <testcase classname="chrome.108_0_5359_125.windows.Hurt_me_plenty_-_regression" name="Should be valid value" time="0.097">
-      <system-out><![CDATA[
-COMMAND: POST /session/2990c98ca0c06c8e16be1210d0c3baa3/element - {"using":"xpath","value":"//md-content[@id=\"compute\"]"}
-RESULT: {"using":"xpath","value":"//md-content[@id=\"compute\"]"}
-COMMAND: GET /session/2990c98ca0c06c8e16be1210d0c3baa3/element/f892f1e4-fd38-488a-aef0-6514399e4b55/text - {}
-RESULT: {}
-]]></system-out>
-    </testcase>
-    <testcase classname="chrome.108_0_5359_125.windows.Hurt_me_plenty_-_regression" name="Should be valid value" time="0.155">
-      <system-out><![CDATA[
-COMMAND: POST /session/2990c98ca0c06c8e16be1210d0c3baa3/element - {"using":"xpath","value":"//md-content[@id=\"compute\"]"}
-RESULT: {"using":"xpath","value":"//md-content[@id=\"compute\"]"}
-COMMAND: GET /session/2990c98ca0c06c8e16be1210d0c3baa3/element/f892f1e4-fd38-488a-aef0-6514399e4b55/text - {}
-RESULT: {}
-]]></system-out>
-    </testcase>
-    <testcase classname="chrome.108_0_5359_125.windows.Hurt_me_plenty_-_regression" name="Should be valid value" time="0.109">
-      <system-out><![CDATA[
-COMMAND: POST /session/2990c98ca0c06c8e16be1210d0c3baa3/element - {"using":"xpath","value":"//md-content[@id=\"compute\"]"}
-RESULT: {"using":"xpath","value":"//md-content[@id=\"compute\"]"}
-COMMAND: GET /session/2990c98ca0c06c8e16be1210d0c3baa3/element/f892f1e4-fd38-488a-aef0-6514399e4b55/text - {}
-RESULT: {}
-]]></system-out>
-    </testcase>
-    <testcase classname="chrome.108_0_5359_125.windows.Hurt_me_plenty_-_regression" name="Should be valid value" time="0.088">
-      <system-out><![CDATA[
-COMMAND: POST /session/2990c98ca0c06c8e16be1210d0c3baa3/element - {"using":"xpath","value":"//md-content[@id=\"compute\"]"}
-RESULT: {"using":"xpath","value":"//md-content[@id=\"compute\"]"}
-COMMAND: GET /session/2990c98ca0c06c8e16be1210d0c3baa3/element/f892f1e4-fd38-488a-aef0-6514399e4b55/text - {}
-RESULT: {}
-COMMAND: DELETE /session/2990c98ca0c06c8e16be1210d0c3baa3/window - {}
-COMMAND: DELETE /session/2990c98ca0c06c8e16be1210d0c3baa3 - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
