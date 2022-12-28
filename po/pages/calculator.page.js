@@ -65,33 +65,38 @@ class CalculatorPage extends BasePage {
     async fillComputeForm() {
         await this.instNumber.setValue(numOfInstances);
         await this.seriesDropdown.click();
+        await this.seriesOption.waitForClickable();
         await this.seriesOption.click();
         await this.machineTypeDropdown.click();
+        await this.machineTypeOption.waitForClickable();
         await this.machineTypeOption.click();
         await this.addGPUCheckbox.click();
         await this.GPUtypeDropdown.click();
-        await this.GPUtypeOption.waitForClickable()
+        await this.GPUtypeOption.waitForClickable();
         await this.GPUtypeOption.click();
         await this.numberOfGPUDropdown.click();
+        await this.numberOfGPUOption.waitForClickable();
         await this.numberOfGPUOption.click();
         await this.localSSDDropdown.click();
+        await this.localSSDOption.waitForClickable();
         await this.localSSDOption.click();
         await this.datacenterLocDropdown.click();
-        await this.datacenterLocOption.waitForClickable()
+        await this.datacenterLocOption.waitForClickable();
         await this.datacenterLocOption.click();
         await this.commitTermDropdown.click();
+        await this.commitTermOption.waitForClickable();
         await this.commitTermOption.click();
-        await this.addToEstimate.waitForClickable()
+        await this.addToEstimate.waitForClickable();
         await this.addToEstimate.click();
     };    
 
     async estimateEmail() {
         await this.emailEstimateButton.click();
-
     };
 
-    async sendEmail() {
-        await this.sendEmailButton.waitForClickable()
+    async sendEmail(email) {
+        await this.inputEmail.setValue(email);
+        await browser.scroll(0, 200);
         await this.sendEmailButton.click();
     };
 };
