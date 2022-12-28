@@ -1,6 +1,5 @@
 import browsers from "./browsers.js";
-const BROWSER = process.env.BROWSER
-
+const BROWSER = process.env.BROWSER;
 export const config = {
     
     // ====================
@@ -10,7 +9,7 @@ export const config = {
     runner: 'local',
    
     
-    //
+    
     // ==================
     // Specify Test Files
     // ==================
@@ -36,23 +35,19 @@ export const config = {
     ],
     suites: {
         hurtMePlentySmoke: [
-            "./tests/**/test.open.page.js"
+            "./tests/**/test.HMPsmoke.js"
         ],
 
         hurtMePlentyregression: [
-            "./tests/**/test.compute.js",
+            "./tests/**/test.HMPregression.js",
         ],
 
         hardCoreSmoke: [
-            [
-            "./tests/**/test.open.page.js", 
-            "./tests/**/test.open.newtab.js"
-            ]
+            "./tests/**/test.HCsmoke.js"
         ],
 
         hardCoreRegression: [
                 "./tests/**/test.e2e.js"
-
         ],
     },
     //
@@ -85,6 +80,7 @@ export const config = {
         // 5 instances get started at a time.
         maxInstances: 1,
         //
+    
         browserName: browsers[process.env.BROWSER],
         acceptInsecureCerts: true
         // If outputDir is provided WebdriverIO can capture driver session logs
@@ -92,23 +88,6 @@ export const config = {
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
     },
-    // {
-        
-    //     maxInstances: 1,
-    //     browserName: 'firefox',
-       
-    //     'moz:firefoxOptions': {
-    //       // flag to activate Firefox headless mode (see https://github.com/mozilla/geckodriver/blob/master/README.md#firefox-capabilities for more details about moz:firefoxOptions)
-    //       // args: ['-headless']
-    //     },
-    //     // If outputDir is provided WebdriverIO can capture driver session logs
-    //     // it is possible to configure which logTypes to exclude.
-    //     // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
-    //     excludeDriverLogs: ['bugreport', 'server'],
-    //     //
-    //     // Parameter to ignore some or all Puppeteer default arguments
-    //     // ignoreDefaultArgs: ['-foreground'], // set value to true to ignore all default arguments
-    // }
 ],
     //
     // ===================
@@ -183,17 +162,12 @@ export const config = {
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
     reporters: ['spec',
-//     ['allure', {
-//     	outputDir: 'allure-results',
-//         disableWebdriverStepsReporting: true,
-//         disableWebdriverScreenshotsReporting: false,
-//  }]
-['junit', {
-    outputDir: './reports',
-    outputFileFormat: function(options) { // optional
-        return `results-${options.cid}.${options.capabilities}.xml`
-    }
-}]
+    ['junit', {
+        outputDir: './reports',
+        outputFileFormat: function(options) { // optional
+            return `results-${options.cid}.${options.capabilities}.xml`
+        }
+    }]
     ],
     
     //
@@ -246,7 +220,8 @@ export const config = {
      * @param {Array.<String>} specs List of spec file paths that are to be run
      * @param {String} cid worker id (e.g. 0-0)
      */
-    // beforeSession: function (config, capabilities, specs, cid) {
+    // beforeSession: async function (config, capabilities, specs, cid) {
+    //     await browser.maximizeWindow()
     // },
     /**
      * Gets executed before test execution begins. At this point you can access to all global
@@ -256,6 +231,8 @@ export const config = {
      * @param {Object}         browser      instance of created browser/device session
      */
     // before: function (capabilities, specs) {
+    //     browser.maximizeWindow()
+        
     // },
     /**
      * Runs before a WebdriverIO command gets executed.
@@ -268,13 +245,15 @@ export const config = {
      * Hook that gets executed before the suite starts
      * @param {Object} suite suite details
      */
-    // beforeSuite: function (suite) {
+    // beforeSuite: async function (suite) {
+    //     await browser.maximizeWindow()
     // },
     /**
      * Function to be executed before a test (in Mocha/Jasmine) starts.
      */
-    // beforeTest: function (test, context) {
-    // },
+    beforeTest: async function (test, context) {
+        await browser.maximizeWindow(); 
+    },
     /**
      * Hook that gets executed _before_ a hook within the suite starts (e.g. runs before calling
      * beforeEach in Mocha)
@@ -298,11 +277,7 @@ export const config = {
      * @param {Object}  result.retries   informations to spec related retries, e.g. `{ attempts: 0, limit: 0 }`
      */
     afterTest: async function (test, scenario, { error, duration, passed }, context) {
-        var today = new Date()
-        var dd = String(today.getDate()).padStart(2, '0');
-        var mm = String(today.getMonth() + 1).padStart(2, '0');
-        var yyyy = today.getFullYear();
-        const currentdate = mm + '-' + dd + '-' + yyyy;
+        var currentdate = new Date().toISOString().replace(/:/g, '-')
         if (error) {
           const filepath = `./reports/screenshots/${test.title.replace(/\s+/g, '-').toLowerCase()}.${currentdate}.png`  
           await browser.saveScreenshot(filepath)
@@ -314,6 +289,7 @@ export const config = {
      * Hook that gets executed after the suite has ended
      * @param {Object} suite suite details
      */
+
     // afterSuite: function (suite) {
     // },
     /**

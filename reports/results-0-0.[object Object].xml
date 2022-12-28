@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Hardcore regression" timestamp="2022-12-28T22:21:41" time="42.063" tests="1" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Hardcore - regression"/>
+      <property name="capabilities" value="chrome.108_0_5359_125.windows"/>
+      <property name="file" value="file:///C:/Users/Admin/googleCloudCalculatorProject/tests/test.e2e.js"/>
+    </properties>
+    <testcase classname="chrome.108_0_5359_125.windows.Hardcore_-_regression" name="before all hook for Hardcore regression" time="42.046">
+      <failure/>
+      <error message="Can't call click on element with selector &quot;//span[contains(text(), &quot;Google Cloud Price Estimate&quot;)]&quot; because element wasn't found"/>
+      <system-err><![CDATA[
+Error: Can't call click on element with selector "//span[contains(text(), "Google Cloud Price Estimate")]" because element wasn't found
+    at async TempEmailPage.getEmailContent (file:///C:/Users/Admin/googleCloudCalculatorProject/po/pages/tempEmail.page.js:21:9)
+    at async Context.<anonymous> (file:///C:/Users/Admin/googleCloudCalculatorProject/tests/test.e2e.js:24:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

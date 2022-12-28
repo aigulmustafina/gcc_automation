@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Hurt me plenty smoke" timestamp="2022-12-28T12:13:54" time="17.942" tests="2" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Hurt me plenty - smoke"/>
+      <property name="capabilities" value="firefox.108_0_1.windows"/>
+      <property name="file" value="file:///C:/Users/Admin/googleCloudCalculatorProject/tests/test.open.page.js"/>
+    </properties>
+    <testcase classname="firefox.108_0_1.windows.Hurt_me_plenty_-_smoke" name="should open the home page" time="10.165">
+      <system-out><![CDATA[
+COMMAND: GET /session/d1918565-8ea4-417e-891b-4a029cb93f21/title - {}
+RESULT: {"url":"https://cloud.google.com/"}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.108_0_1.windows.Hurt_me_plenty_-_smoke" name="Should go to Calculator page" time="7.766">
+      <system-out><![CDATA[
+COMMAND: POST /session/d1918565-8ea4-417e-891b-4a029cb93f21/element - {"using":"xpath","value":"//input[@aria-label=\"Search\"]"}
+RESULT: {"using":"xpath","value":"//input[@aria-label=\"Search\"]"}
+COMMAND: POST /session/d1918565-8ea4-417e-891b-4a029cb93f21/element/fca8a50b-1bd4-40e6-b207-c5618df610fc/clear - {}
+RESULT: {}
+COMMAND: POST /session/d1918565-8ea4-417e-891b-4a029cb93f21/element/fca8a50b-1bd4-40e6-b207-c5618df610fc/value - {"text":"Google Cloud Pricing Calculator"}
+RESULT: {"text":"Google Cloud Pricing Calculator"}
+COMMAND: POST /session/d1918565-8ea4-417e-891b-4a029cb93f21/element - {"using":"xpath","value":"//a[@href=\"https://cloud.google.com/products/calculator?hl=en\"]"}
+RESULT: {"using":"xpath","value":"//a[@href=\"https://cloud.google.com/products/calculator?hl=en\"]"}
+COMMAND: POST /session/d1918565-8ea4-417e-891b-4a029cb93f21/elements - {"using":"xpath","value":"//a[@href=\"https://cloud.google.com/products/calculator?hl=en\"]"}
+RESULT: {"using":"xpath","value":"//a[@href=\"https://cloud.google.com/products/calculator?hl=en\"]"}
+COMMAND: POST /session/d1918565-8ea4-417e-891b-4a029cb93f21/elements - {"using":"xpath","value":"//a[@href=\"https://cloud.google.com/products/calculator?hl=en\"]"}
+RESULT: {"using":"xpath","value":"//a[@href=\"https://cloud.google.com/products/calculator?hl=en\"]"}
+COMMAND: POST /session/d1918565-8ea4-417e-891b-4a029cb93f21/element - {"using":"xpath","value":"//a[@href=\"https://cloud.google.com/products/calculator?hl=en\"]"}
+RESULT: {"using":"xpath","value":"//a[@href=\"https://cloud.google.com/products/calculator?hl=en\"]"}
+COMMAND: POST /session/d1918565-8ea4-417e-891b-4a029cb93f21/element/c7d3f446-4bbe-45c7-a401-a29d8f62ed9a/click - {}
+RESULT: {}
+COMMAND: GET /session/d1918565-8ea4-417e-891b-4a029cb93f21/title - {}
+RESULT: {}
+COMMAND: DELETE /session/d1918565-8ea4-417e-891b-4a029cb93f21/window - {}
+COMMAND: GET /session/d1918565-8ea4-417e-891b-4a029cb93f21/window/handles - {}
+RESULT: {}
+COMMAND: DELETE /session/d1918565-8ea4-417e-891b-4a029cb93f21/window - {}
+COMMAND: DELETE /session/d1918565-8ea4-417e-891b-4a029cb93f21 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+  <testsuite name="Hardcore smoke" timestamp="2022-12-28T12:14:12" time="3.04" tests="1" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Hardcore - smoke"/>
+      <property name="capabilities" value="firefox.108_0_1.windows"/>
+      <property name="file" value="file:///C:/Users/Admin/googleCloudCalculatorProject/tests/test.open.page.js"/>
+    </properties>
+    <testcase classname="firefox.108_0_1.windows.Hardcore_-_smoke" name="before all hook for Hardcore smoke" time="3.033">
+      <failure/>
+      <error message="Tried to run command without establishing a connection"/>
+      <system-err><![CDATA[
+invalid session id: Tried to run command without establishing a connection
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Context.<anonymous> (file:///C:/Users/Admin/googleCloudCalculatorProject/tests/test.open.newtab.js:5:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+  <testsuite name="Hurt me plenty smoke" timestamp="2022-12-28T12:13:54" time="17.942" tests="2" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Hurt me plenty - smoke"/>
+      <property name="capabilities" value="firefox.108_0_1.windows"/>
+      <property name="file" value="file:///C:/Users/Admin/googleCloudCalculatorProject/tests/test.open.newtab.js"/>
+    </properties>
+    <testcase classname="firefox.108_0_1.windows.Hurt_me_plenty_-_smoke" name="should open the home page" time="10.165">
+      <system-out><![CDATA[
+COMMAND: GET /session/d1918565-8ea4-417e-891b-4a029cb93f21/title - {}
+RESULT: {"url":"https://cloud.google.com/"}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.108_0_1.windows.Hurt_me_plenty_-_smoke" name="Should go to Calculator page" time="7.766">
+      <system-out><![CDATA[
+COMMAND: POST /session/d1918565-8ea4-417e-891b-4a029cb93f21/element - {"using":"xpath","value":"//input[@aria-label=\"Search\"]"}
+RESULT: {"using":"xpath","value":"//input[@aria-label=\"Search\"]"}
+COMMAND: POST /session/d1918565-8ea4-417e-891b-4a029cb93f21/element/fca8a50b-1bd4-40e6-b207-c5618df610fc/clear - {}
+RESULT: {}
+COMMAND: POST /session/d1918565-8ea4-417e-891b-4a029cb93f21/element/fca8a50b-1bd4-40e6-b207-c5618df610fc/value - {"text":"Google Cloud Pricing Calculator"}
+RESULT: {"text":"Google Cloud Pricing Calculator"}
+COMMAND: POST /session/d1918565-8ea4-417e-891b-4a029cb93f21/element - {"using":"xpath","value":"//a[@href=\"https://cloud.google.com/products/calculator?hl=en\"]"}
+RESULT: {"using":"xpath","value":"//a[@href=\"https://cloud.google.com/products/calculator?hl=en\"]"}
+COMMAND: POST /session/d1918565-8ea4-417e-891b-4a029cb93f21/elements - {"using":"xpath","value":"//a[@href=\"https://cloud.google.com/products/calculator?hl=en\"]"}
+RESULT: {"using":"xpath","value":"//a[@href=\"https://cloud.google.com/products/calculator?hl=en\"]"}
+COMMAND: POST /session/d1918565-8ea4-417e-891b-4a029cb93f21/elements - {"using":"xpath","value":"//a[@href=\"https://cloud.google.com/products/calculator?hl=en\"]"}
+RESULT: {"using":"xpath","value":"//a[@href=\"https://cloud.google.com/products/calculator?hl=en\"]"}
+COMMAND: POST /session/d1918565-8ea4-417e-891b-4a029cb93f21/element - {"using":"xpath","value":"//a[@href=\"https://cloud.google.com/products/calculator?hl=en\"]"}
+RESULT: {"using":"xpath","value":"//a[@href=\"https://cloud.google.com/products/calculator?hl=en\"]"}
+COMMAND: POST /session/d1918565-8ea4-417e-891b-4a029cb93f21/element/c7d3f446-4bbe-45c7-a401-a29d8f62ed9a/click - {}
+RESULT: {}
+COMMAND: GET /session/d1918565-8ea4-417e-891b-4a029cb93f21/title - {}
+RESULT: {}
+COMMAND: DELETE /session/d1918565-8ea4-417e-891b-4a029cb93f21/window - {}
+COMMAND: GET /session/d1918565-8ea4-417e-891b-4a029cb93f21/window/handles - {}
+RESULT: {}
+COMMAND: DELETE /session/d1918565-8ea4-417e-891b-4a029cb93f21/window - {}
+COMMAND: DELETE /session/d1918565-8ea4-417e-891b-4a029cb93f21 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+  <testsuite name="Hardcore smoke" timestamp="2022-12-28T12:14:12" time="3.04" tests="2" failures="2" errors="2" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Hardcore - smoke"/>
+      <property name="capabilities" value="firefox.108_0_1.windows"/>
+      <property name="file" value="file:///C:/Users/Admin/googleCloudCalculatorProject/tests/test.open.newtab.js"/>
+    </properties>
+    <testcase classname="firefox.108_0_1.windows.Hardcore_-_smoke" name="before all hook for Hardcore smoke" time="3.033">
+      <failure/>
+      <error message="Tried to run command without establishing a connection"/>
+      <system-err><![CDATA[
+invalid session id: Tried to run command without establishing a connection
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Context.<anonymous> (file:///C:/Users/Admin/googleCloudCalculatorProject/tests/test.open.newtab.js:5:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="firefox.108_0_1.windows.Hardcore_-_smoke" name="before all hook for Hardcore smoke" time="3.033">
+      <failure/>
+      <error message="Tried to run command without establishing a connection"/>
+      <system-err><![CDATA[
+invalid session id: Tried to run command without establishing a connection
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Context.<anonymous> (file:///C:/Users/Admin/googleCloudCalculatorProject/tests/test.open.newtab.js:5:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,6 +1,7 @@
 const browsers = {
-    chrome: "chrome",
-    firefox: "firefox"
-}
+    firefox: 'firefox', 
+    chrome: 'chrome',
+    MicrosoftEdge: 'MicrosoftEdge'
+};
 
-export default browsers
+export default browsers;
