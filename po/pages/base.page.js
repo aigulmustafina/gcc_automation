@@ -1,9 +1,13 @@
 export default class BasePage {
     constructor(url) {
         this.url = url;
-    }
+    };
 
     open() {
-        browser.url(this.url)
-    }
-}
+        browser.url(this.url);
+    };
+
+    close() {
+        browser.closeWindow();
+    };
+};

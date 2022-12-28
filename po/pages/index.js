@@ -1,6 +1,6 @@
-import HomePage from "./home.page.js";
-import CalculatorPage from "./calculator.page.js";
-import TempEmailPage from "./tempEmail.js";
+import HomePage from './home.page.js';
+import CalculatorPage from './calculator.page.js';
+import TempEmailPage from './tempEmail.page.js';
 
 function page(name) {
     const items = {
@@ -11,4 +11,4 @@ function page(name) {
     return items[name.toLowerCase()];
 }
 
-export default {HomePage, CalculatorPage, TempEmailPage, page}
+export default {HomePage, CalculatorPage, TempEmailPage, page};

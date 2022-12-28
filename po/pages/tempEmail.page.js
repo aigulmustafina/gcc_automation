@@ -1,22 +1,25 @@
-import BasePage from "./base.page.js";
+import BasePage from './base.page.js';
 
 class TempEmailPage extends BasePage {
 
     constructor() {
-        super("https://10minutemail.com/")
+        super('https://10minutemail.com/');
     }
 
-    get emailGenerator() {return $('//input[@id="mail_address"]')}
+    get emailGenerator() {return $('//input[@id="mail_address"]')};
+    get emailSubject() {return $('//span[contains(text(), "Google Cloud Price Estimate")]')};
 
-    get emailSender() {return $('//div[@class="small_subject"]/span')}
+    // get emailGenerator() {return $('//input[@id="eposta_adres"]')};
 
-    get totalPricePropinEmail() {return $('(//table)[2]//tr[2]/td/h3')}
+    // get emailSubject() {return $('//div[contains(text(), "Google Cloud Price Estimate")]')};
 
-    get totalPriceValueinEmail() {return $('(//table)[2]//tr[2]/td/h3/../following-sibling::td/h3')} 
+    get totalPricePropinEmail() {return $('(//table)[2]//tr[2]/td/h3')};
 
-    // open () {
-    //     super.open("https://10minutemail.com/")
-    // }
-}
+    get totalPriceValueinEmail() {return $('(//table)[2]//tr[2]/td/h3/../following-sibling::td/h3')};
+
+    async getEmailContent() {
+        await this.emailSubject.click();
+    };
+};
 
 export default new TempEmailPage();
