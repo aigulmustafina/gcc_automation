@@ -86,6 +86,7 @@ class CalculatorPage extends BasePage {
         await this.commitTermDropdown.click();
         await this.commitTermOption.waitForClickable();
         await this.commitTermOption.click();
+        await browser.scroll(0, 300); 
         await this.addToEstimate.waitForClickable();
         await this.addToEstimate.click();
     };    
