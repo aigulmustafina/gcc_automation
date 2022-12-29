@@ -18,7 +18,7 @@ class TempEmailPage extends BasePage {
     
     async getEmailContent() {
         await this.refresh.click()
-        await this.emailSubject.waitForClickable();
+        await this.emailSubject.waitForClickable({timeout: 60000});
         await this.emailSubject.click();
     };
 };
