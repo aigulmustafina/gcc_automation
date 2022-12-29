@@ -1,5 +1,4 @@
-const browsers = {
-    firefox: 'firefox', 
+const browsers = { 
     chrome: 'chrome',
     MicrosoftEdge: 'MicrosoftEdge'
 };
