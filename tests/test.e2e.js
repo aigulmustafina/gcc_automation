@@ -13,6 +13,7 @@ describe('Hardcore - regression', () => {
         await browser.setTimeout({ 'pageLoad': 5000 });
         const email = await TempEmailPage.emailGenerator.getValue();
         await browser.switchWindow(CalculatorPage.url);
+        await browser.scroll(0, 200)
         await CalculatorPage.switchFrames();
         await CalculatorPage.sendEmail(email);
         await browser.switchWindow(TempEmailPage.url);
