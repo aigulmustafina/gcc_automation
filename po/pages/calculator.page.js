@@ -97,7 +97,6 @@ class CalculatorPage extends BasePage {
 
     async sendEmail(email) {
         await this.inputEmail.setValue(email);
-        await browser.scroll(0, 200);
         await this.sendEmailButton.click();
     };
 };
