@@ -17,7 +17,8 @@ class TempEmailPage extends BasePage {
     get totalPriceValueinEmail() {return $('(//table)[2]//tr[2]/td/h3/../following-sibling::td/h3')};
     
     async getEmailContent() {
-        await this.emailSubject.waitForDisplayed({ timeout: 30000 });
+        await this.refresh.click()
+        await this.emailSubject.waitForDisplayed({ timeout: 50000 });
         await this.emailSubject.click();
     };
 };

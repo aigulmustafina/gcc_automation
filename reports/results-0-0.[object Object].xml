@@ -1,32 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Hardcore regression" timestamp="2022-12-29T13:25:28" time="51.179" tests="1" failures="0" errors="0" skipped="0">
+  <testsuite name="Hardcore regression" timestamp="2022-12-29T15:10:34" time="48.205" tests="1" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="suiteName" value="Hardcore - regression"/>
-      <property name="capabilities" value="msedge.108_0_1462_54.windows"/>
+      <property name="capabilities" value="chrome.108_0_5359_125.windows"/>
       <property name="file" value="file:///C:/Users/Admin/googleCloudCalculatorProject/tests/test.e2e.js"/>
     </properties>
-    <testcase classname="msedge.108_0_1462_54.windows.Hardcore_-_regression" name="Should be expected value for total price" time="1.214">
+    <testcase classname="chrome.108_0_5359_125.windows.Hardcore_-_regression" name="Should be expected value for total price" time="0.758">
       <system-out><![CDATA[
-COMMAND: POST /session/816b28c4082e0fde65e360413ff90531/element - {"using":"xpath","value":"(//table)[2]//tr[2]/td/h3"}
+COMMAND: POST /session/04f1944ec79aaf459e35b4b2f28c43da/element - {"using":"xpath","value":"(//table)[2]//tr[2]/td/h3"}
 RESULT: {"using":"xpath","value":"(//table)[2]//tr[2]/td/h3"}
-COMMAND: POST /session/816b28c4082e0fde65e360413ff90531/elements - {"using":"xpath","value":"(//table)[2]//tr[2]/td/h3"}
+COMMAND: POST /session/04f1944ec79aaf459e35b4b2f28c43da/elements - {"using":"xpath","value":"(//table)[2]//tr[2]/td/h3"}
 RESULT: {"using":"xpath","value":"(//table)[2]//tr[2]/td/h3"}
-COMMAND: POST /session/816b28c4082e0fde65e360413ff90531/elements - {"using":"xpath","value":"(//table)[2]//tr[2]/td/h3"}
+COMMAND: POST /session/04f1944ec79aaf459e35b4b2f28c43da/elements - {"using":"xpath","value":"(//table)[2]//tr[2]/td/h3"}
 RESULT: {"using":"xpath","value":"(//table)[2]//tr[2]/td/h3"}
-COMMAND: POST /session/816b28c4082e0fde65e360413ff90531/elements - {"using":"xpath","value":"(//table)[2]//tr[2]/td/h3"}
+COMMAND: POST /session/04f1944ec79aaf459e35b4b2f28c43da/element - {"using":"xpath","value":"(//table)[2]//tr[2]/td/h3"}
 RESULT: {"using":"xpath","value":"(//table)[2]//tr[2]/td/h3"}
-COMMAND: POST /session/816b28c4082e0fde65e360413ff90531/element - {"using":"xpath","value":"(//table)[2]//tr[2]/td/h3"}
-RESULT: {"using":"xpath","value":"(//table)[2]//tr[2]/td/h3"}
-COMMAND: GET /session/816b28c4082e0fde65e360413ff90531/element/c2f00499-7ffd-4dfe-aaa1-4909c8bece94/text - {}
+COMMAND: GET /session/04f1944ec79aaf459e35b4b2f28c43da/element/dfb43589-2cfd-4c55-a5ce-879509a789d5/text - {}
 RESULT: {}
-COMMAND: POST /session/816b28c4082e0fde65e360413ff90531/element - {"using":"xpath","value":"(//table)[2]//tr[2]/td/h3/../following-sibling::td/h3"}
+COMMAND: POST /session/04f1944ec79aaf459e35b4b2f28c43da/element - {"using":"xpath","value":"(//table)[2]//tr[2]/td/h3/../following-sibling::td/h3"}
 RESULT: {"using":"xpath","value":"(//table)[2]//tr[2]/td/h3/../following-sibling::td/h3"}
-COMMAND: GET /session/816b28c4082e0fde65e360413ff90531/element/45df2894-c82b-4522-8e58-8ffcb8f03573/text - {}
+COMMAND: GET /session/04f1944ec79aaf459e35b4b2f28c43da/element/da37dfc1-6aee-40f7-9128-cec3407f72f0/text - {}
 RESULT: {}
-COMMAND: DELETE /session/816b28c4082e0fde65e360413ff90531/window - {}
-COMMAND: DELETE /session/816b28c4082e0fde65e360413ff90531 - {}
+COMMAND: DELETE /session/04f1944ec79aaf459e35b4b2f28c43da/window - {}
+COMMAND: DELETE /session/04f1944ec79aaf459e35b4b2f28c43da - {}
 RESULT: {}
 RESULT: {}
 ]]></system-out>
