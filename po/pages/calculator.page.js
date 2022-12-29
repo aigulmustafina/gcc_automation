@@ -56,9 +56,9 @@ class CalculatorPage extends BasePage {
 
     async switchFrames() {
         await browser.setTimeout({ 'pageLoad': 5000 });
-        await this.outerFrame.waitForExist({ timeout: 5000 });
+        await this.outerFrame.waitForClickable({ timeout: 5000 });
         await browser.switchToFrame(await this.outerFrame);
-        await this.innerFrame.waitForExist({ timeout: 5000 });
+        await this.innerFrame.waitForClickable({ timeout: 5000 });
         await browser.switchToFrame(await this.innerFrame);
     }
 
